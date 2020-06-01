@@ -7,11 +7,11 @@ sections:
 - type: heading
   label: Obsah
 - type: document
-  path: content/main.md
-  label: Obsah
-- type: document
   path: content/opening.md
   label: O firmě
+- type: document
+  path: content/main.md
+  label: Obsah
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
