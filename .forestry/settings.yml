@@ -12,11 +12,6 @@ sections:
 - type: document
   path: "./content/opening.md"
   label: O firmě
-- type: directory
-  path: "./static/gallery"
-  label: Galerie
-  create: all
-  match: "**/*"
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
