@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: Sekce
+- type: directory
+  path: content/sections
+  label: Sekce webu
+  create: all
+  match: "**/*"
+- type: heading
   label: Obsah
 - type: document
   path: content/main.md
