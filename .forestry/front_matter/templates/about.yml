@@ -25,3 +25,5 @@ fields:
     schema:
       format: markdown
   label: Otevírací doba
+pages:
+- content/opening.md
