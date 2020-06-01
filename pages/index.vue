@@ -29,25 +29,6 @@
           {{ mainContent.obsah }}
         </p>
 
-        <div class="my4 mxn3 center">
-          <!-- Start Image with heading -->
-          <figure class="ampstart-image-with-heading  m0 relative mb4">
-            <amp-img
-              src="../img/themes_2/bar.jpg"
-              width="600"
-              height="450"
-              alt="Happy Hour Monday through Friday 5 PM"
-              layout="responsive"
-            ></amp-img>
-            <figcaption class="absolute right-0 bottom-0 left-0">
-              <header class="ampstart-image-heading px2 py2 line-height-4">
-                <h2 class="h1 bold">Happy Hour</h2>
-                <p class="h4">Mon-Fri 5PM</p>
-              </header>
-            </figcaption>
-          </figure>
-          <!-- End Image with heading -->
-        </div>
         <h2 id="locations" class="my4 theme2-anchored">
           Locations &amp; Hours
         </h2>

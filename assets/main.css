@@ -1063,8 +1063,8 @@ html {
     box-sizing: border-box;
   }
   body {
-    background: #1d1d1d;
-    color: #fff;
+    background: #fdfdfd;
+    color: rgb(22, 22, 22);
     font-family: Lora, serif;
     min-width: 315px;
     overflow-x: hidden;
