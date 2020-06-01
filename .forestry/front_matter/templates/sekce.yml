@@ -1,4 +1,23 @@
 ---
 label: Sekce
 hide_body: true
-fields: []
+fields:
+- name: titulek
+  type: text
+  config:
+    required: false
+  label: Titulek
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
+- name: obrazek
+  type: file
+  config:
+    maxSize: 64
+  label: obrazek
