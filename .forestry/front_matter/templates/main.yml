@@ -1,4 +1,18 @@
 ---
 label: main
 hide_body: false
-fields: []
+fields:
+- name: titulek
+  type: text
+  config:
+    required: false
+  label: titulek
+- name: obsah
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: obsah
