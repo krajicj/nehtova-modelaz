@@ -12,7 +12,6 @@ sections:
 - type: document
   path: content/opening.md
   label: O firmě
-  match: "**/*"
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
