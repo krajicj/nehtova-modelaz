@@ -9,6 +9,10 @@ sections:
 - type: document
   path: "./content/main"
   label: Obsah
+- type: document
+  path: "./content/opening.md"
+  label: O firmě
+  match: "**/*"
 - type: directory
   path: "./static/gallery"
   label: Galerie
