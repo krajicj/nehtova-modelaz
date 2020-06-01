@@ -1,4 +1,27 @@
 ---
 label: About
 hide_body: true
-fields: []
+fields:
+- name: titulek
+  type: text
+  config:
+    required: false
+  label: Titulek
+- name: adresa
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Adresa
+- name: oteviraci_doba
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Otevírací doba
