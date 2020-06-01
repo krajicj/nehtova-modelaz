@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: heading
-  label: Obsah
 - type: document
   path: content/opening.md
   label: O firmě
+- type: heading
+  label: Obsah
 - type: document
   path: content/main.md
   label: Obsah
