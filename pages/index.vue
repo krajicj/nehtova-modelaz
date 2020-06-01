@@ -81,7 +81,7 @@ export default {
     this.mainContent = mainContentMarkup.attributes;
 
     const aboutContentMarkup = require(`~/content/about.md`);
-    this.mainContent = mainContentMarkup.attributes;
+    this.about = aboutContentMarkup.attributes;
 
   },
   async asyncData () {
