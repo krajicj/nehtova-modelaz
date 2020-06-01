@@ -4,14 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: content/opening.md
-  label: O firmě
 - type: heading
   label: Obsah
 - type: document
   path: content/main.md
   label: Obsah
+- type: document
+  path: content/opening.md
+  label: O firmě
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
