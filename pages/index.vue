@@ -29,23 +29,13 @@
           {{ mainContent.obsah }}
         </p>
 
-        <h2 id="locations" class="my4 theme2-anchored">
-          Locations &amp; Hours
-        </h2>
-        <div class="col col-12 sm-col-6 mb4">
-          <h3 class="mb1">San Francisco</h3>
-          <p class="mb0">123 E Somewhere St.,<br />San Francisco, CA<br /></p>
-          <p class="mb0">
-            Mon-Thu 11am–2pm, 4pm–9pm<br />Fri-Sun 11am–3pm, 4pm–12am<br />
-          </p>
-        </div>
-        <div class="col col-12 sm-col-6 mb4">
-          <h3 class="mb1">San Jose</h3>
-          <p class="mb0">123 S Elsewhere St.,<br />San Jose, CA<br /></p>
-          <p class="mb0">
-            Mon-Thu 11am–2pm, 4pm–9pm<br />Fri-Sun 11am–3pm, 4pm–11pm<br />
-          </p>
-        </div>
+        <Section
+          v-for="section in sections"
+          :key="section.titulek"
+          :section="section.attributes"
+        />
+
+        <About :about="about" />
 
         <!-- Gallery -->
         <Gallery :images="images" />
@@ -55,7 +45,7 @@
     <!-- Start Footer -->
     <footer class="ampstart-footer flex flex-column items-center px3 ">
       <small>
-        © Beck & Galo
+        © Alena Krajícová
       </small>
     </footer>
     <!-- End Footer -->
@@ -66,41 +56,54 @@
 import Sidebar from "../components/Sidebar";
 import Slider from "../components/Slider";
 import Gallery from "../components/Gallery";
+import Section from "../components/Section";
+import About from "../components/About";
 
 export default {
   components: {
     Sidebar,
     Slider,
-    Gallery
+    Gallery,
+    Section,
+    About
   },
   data: function () {
     return {
       slides: [],
       images: [],
-      mainContent: {}
+      mainContent: {},
+      sections: [],
+      about: {}
     }
   },
   created () {
     const mainContentMarkup = require(`~/content/main.md`);
     this.mainContent = mainContentMarkup.attributes;
-    //console.log(mainContentMarkup);
+
+    const aboutContentMarkup = require(`~/content/about.md`);
+    this.mainContent = mainContentMarkup.attributes;
 
   },
   async asyncData () {
     const slides = [];
     const images = [];
-    try {
-      const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
-      imgs.keys().forEach(key => (slides.push("slider/" + key)));
-    } catch (err) {
-    }
-    try {
-      const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
-      imgsGal.keys().forEach(key => (images.push("gallery/" + key)));
-    } catch (err) {
-    }
 
-    return { slides, images };
+
+    const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
+    imgs.keys().forEach(key => (slides.push("slider/" + key)));
+
+    const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
+    imgsGal.keys().forEach(key => (images.push("gallery/" + key)));
+
+
+    const sectionsAll = await require.context("~/content/sections/", true, /\.md$/)
+    const sections = sectionsAll.keys().map((key) => {
+      // give back the value of each post context
+      return sectionsAll(key)
+    });
+
+
+    return { slides, images, sections };
   }
 }
 </script>
