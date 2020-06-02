@@ -1,13 +1,18 @@
 ---
 label: About
-hide_body: true
+hide_body: false
 fields:
 - name: titulek
   type: text
   config:
     required: false
   label: Titulek
-- name: adresa
+- name: ulice_cp
+  type: text
+  config:
+    required: false
+  label: Ulice a číslo popisné
+- name: psc
   type: textarea
   default: ''
   config:
@@ -15,15 +20,11 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Adresa
-- name: oteviraci_doba
-  type: textarea
-  default: ''
+  label: PSČ
+- name: mesto
+  type: text
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Otevírací doba
+  label: Město
 pages:
 - content/about.md
