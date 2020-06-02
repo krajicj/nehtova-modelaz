@@ -26,14 +26,5 @@ fields:
   config:
     required: false
   label: Město
-- name: oteviraci_doba
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Otevírací doba
 pages:
 - content/about.md
