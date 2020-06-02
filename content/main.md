@@ -6,5 +6,6 @@ obsah: Chcete aby vaše nehty byly krásné a zároveň zdravé. Svěřte je do 
 nadpis: nehtová modeláž
 nadpis2: Alena Krajícová
 nadpis3: Plzeň
+main_image: "/static/dsc_3232.jpg"
 
 ---
