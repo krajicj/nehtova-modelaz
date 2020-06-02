@@ -11,8 +11,6 @@ sections:
   label: Sekce webu
   create: all
   match: "**/*"
-- type: heading
-  label: Obsah
 - type: document
   path: content/main.md
   label: Obsah
