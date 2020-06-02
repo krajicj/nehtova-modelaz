@@ -1326,6 +1326,7 @@ html {
   }
   .ampstart-fullpage-hero-heading {
     line-height: 3.5rem;
+    padding-top: 25vh;
   }
   .ampstart-fullpage-hero-cta {
     background: transparent;
@@ -1782,3 +1783,53 @@ html {
     font-weight: inherit;
     line-height: 1.12;
   }
+
+
+
+
+.lune-anim-move-up {
+  animation: i .8s .4s cubic-bezier(.41,.01,.27,1) both
+}
+
+@keyframes i {
+  0% {
+    opacity: 0;
+    transform: translateY(3.125rem)
+  }
+
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+.lune-landing-title-middle {
+  animation-delay: calc(.4s + .1s)
+}
+
+.lune-landing-title-bottom {
+  animation-delay: calc(.4s + 2 * .1s)
+}
+
+.ampstart-btn {
+  animation-delay: calc(.4s + 3 * .1s);
+}
+/*
+.lune-landing-title-top {
+  left: calc(-6% - .26em);
+  top: 0
+}
+
+
+.lune-landing-title-bottom {
+  right: calc(-6% - .26em);
+  top: 52%
+}
+
+.lune-landing-title-middle {
+  top: 28%;
+  left: -6%;
+  right: -6%;
+  font-weight: 900
+}
+*/

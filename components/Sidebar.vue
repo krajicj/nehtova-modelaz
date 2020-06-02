@@ -19,13 +19,19 @@
     <nav class="ampstart-sidebar-nav ampstart-nav">
       <ul class="list-reset m0 p0 ampstart-label">
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#">Home</a>
+          <a class="ampstart-nav-link" href="#">Úvod</a>
+        </li>
+        <li
+          v-for="(section, index) in sections"
+          :key="section.titulek"
+          class="ampstart-nav-item "
+        >
+          <a class="ampstart-nav-link" :href="`#section-${index}`">
+            {{ section.attributes.titulek }}
+          </a>
         </li>
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="menu.amp.html">Menu</a>
-        </li>
-        <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#locations">Locations & Hours</a>
+          <a class="ampstart-nav-link" href="#locations">Kontakt</a>
         </li>
       </ul>
     </nav>
@@ -35,6 +41,6 @@
 
 <script>
 export default {
-
+  props: ['sections']
 }
 </script>

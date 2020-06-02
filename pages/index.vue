@@ -15,7 +15,7 @@
       </div>
     </header>
 
-    <Sidebar />
+    <Sidebar :sections="sections" />
 
     <Slider :slides="slides" :mainContent="mainContent" />
     <!-- End Navbar -->
@@ -30,9 +30,10 @@
         </p>
 
         <Section
-          v-for="section in sections"
+          v-for="(section, index) in sections"
           :key="section.titulek"
           :section="section.attributes"
+          :id="`section-${index}`"
         />
 
         <About :about="about" />
