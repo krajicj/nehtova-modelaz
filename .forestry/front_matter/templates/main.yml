@@ -10,7 +10,17 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: nadpis
+  label: Nadpis 1
+- name: nadpis2
+  type: text
+  config:
+    required: false
+  label: Nadpis 2
+- name: nadpis3
+  type: text
+  config:
+    required: false
+  label: Nadpis 3
 - name: titulek
   type: text
   config:
