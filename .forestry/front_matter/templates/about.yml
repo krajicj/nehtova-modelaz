@@ -7,7 +7,12 @@ fields:
   config:
     required: false
   label: Titulek
-- name: adresa
+- name: ulice_cp
+  type: text
+  config:
+    required: false
+  label: Ulice a číslo popisné
+- name: psc
   type: textarea
   default: ''
   config:
@@ -15,7 +20,12 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Adresa
+  label: PSČ
+- name: mesto
+  type: text
+  config:
+    required: false
+  label: Město
 - name: oteviraci_doba
   type: textarea
   default: ''
