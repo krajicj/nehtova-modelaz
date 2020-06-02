@@ -1302,6 +1302,14 @@ html {
   .ampstart-image-fullpage-hero {
     color: #fff;
   }
+  .ampstart-image-fullpage-hero figcaption{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .ampstart-fullpage-hero-heading-text,
   .ampstart-image-fullpage-hero .ampstart-image-credit {
     -webkit-box-decoration-break: clone;

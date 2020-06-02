@@ -20,7 +20,7 @@ export default {
     ],
     link: [
       { rel: 'canonical', href: '/' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato' }
     ]
   },
   css: ['~/assets/main.css'],

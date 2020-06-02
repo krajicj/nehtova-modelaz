@@ -4,7 +4,11 @@
       {{ about.titulek }}
     </h2>
     <div class="col col-12 sm-col-6 mb4">
-      {{ about.adresa }}
+      <h3 class="mb1">{{ about.ulice_cp }}</h3>
+      <p class="mb1">{{ about.psc }} {{ about.mesto }}<br /></p>
+      <p class="mb0">
+        Mon-Thu 11am–2pm, 4pm–9pm<br />Fri-Sun 11am–3pm, 4pm–12am<br />
+      </p>
     </div>
     <div class="col col-12 sm-col-6 mb4">
       <h3 class="mb1">San Jose</h3>

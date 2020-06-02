@@ -17,7 +17,7 @@
 
     <Sidebar />
 
-    <Slider :slides="slides" :title="mainContent.nadpis" />
+    <Slider :slides="slides" :mainContent="mainContent" />
     <!-- End Navbar -->
 
     <main id="content" role="main">
