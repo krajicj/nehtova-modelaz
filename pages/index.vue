@@ -86,13 +86,13 @@ export default {
 
   },
   async asyncData () {
-    const slides = [];
+  //  const slides = [];
     const images = [];
 
-
+/*
     const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
     imgs.keys().forEach(key => (slides.push("slider/" + key)));
-
+*/
     const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
     imgsGal.keys().forEach(key => (images.push("gallery/" + key)));
 
@@ -104,7 +104,7 @@ export default {
     });
 
 
-    return { slides, images, sections };
+    return {  images, sections };
   }
 }
 </script>

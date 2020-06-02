@@ -4,7 +4,7 @@
     <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
     <amp-carousel
       class="my2 mxn3"
-      height="200"
+      height="300"
       layout="fixed-height"
       type="carousel"
     >
@@ -12,8 +12,8 @@
         v-for="image in images"
         :key="image"
         :src="image"
-        width="300"
-        height="200"
+        width="400"
+        height="300"
         alt="Dining area"
         on="tap:lightbox"
         role="button"
