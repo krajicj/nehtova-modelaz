@@ -7,7 +7,12 @@
       <h3 class="mb1">{{ about.ulice_cp }}</h3>
       <p class="mb1">{{ about.psc }} {{ about.mesto }}<br /></p>
       <p class="mb0">
-        Mon-Thu 11am–2pm, 4pm–9pm<br />Fri-Sun 11am–3pm, 4pm–12am<br />
+        <i class="fa fa-phone"
+          ><a :href="`tel:${about.telefon}`">{{ about.telefon }}</a></i
+        ><br />
+        <i class="fa fa-envelope"
+          ><a :href="`mailto:${about.mail}`">{{ about.email }}</a></i
+        ><br />
       </p>
     </div>
     <div class="col col-12 sm-col-6 mb4">

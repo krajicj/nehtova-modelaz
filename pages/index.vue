@@ -28,6 +28,9 @@
         <div v-html="mainContent.html"></div>
 
         <hr />
+        <h2 class="my4 theme2-anchored">
+          {{ mainContent.attributes.sekce_nadpis }}
+        </h2>
 
         <Section
           v-for="section in sections"
