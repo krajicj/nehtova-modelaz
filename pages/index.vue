@@ -17,17 +17,15 @@
 
     <Sidebar :sections="sections" />
 
-    <Slider :slides="slides" :mainContent="mainContent" />
+    <Slider :slides="slides" :mainContent="mainContent.attributes" />
     <!-- End Navbar -->
 
     <main id="content" role="main">
       <article class="px3">
         <h2 id="story" class="my4 theme2-anchored">
-          {{ mainContent.obsah_nadpis }}
+          {{ mainContent.attributes.obsah_nadpis }}
         </h2>
-        <p class="mb1 ampstart-dropcap">
-          {{ mainContent.obsah }}
-        </p>
+        <div v-html="mainContent.html"></div>
 
         <hr />
 
@@ -81,16 +79,16 @@ export default {
   },
   head () {
     return {
-      title: this.mainContent.titulek,
+      title: this.mainContent.attributes.titulek,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: this.mainContent.nadpis, content: `${this.mainContent.titulek} - ${this.mainContent.nadpis3}` }
+        { hid: 'description', name: this.mainContent.attributes.nadpis, content: `${this.mainContent.attributes.titulek} - ${this.mainContent.attributes.nadpis3}` }
       ]
     }
   },
   created () {
     const mainContentMarkup = require(`~/content/main.md`);
-    this.mainContent = mainContentMarkup.attributes;
+    this.mainContent = mainContentMarkup;
 
     const aboutContentMarkup = require(`~/content/about.md`);
     this.about = aboutContentMarkup.attributes;
