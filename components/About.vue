@@ -1,27 +1,29 @@
 <template>
   <div>
     <h2 id="kontakt" class="my4 theme2-anchored">
-      {{ about.titulek }}
+      {{ about.attributes.titulek }}
     </h2>
     <div class="col col-12 sm-col-6 mb4">
-      <h3 class="mb1">{{ about.ulice_cp }}</h3>
-      <p class="mb1">{{ about.psc }} {{ about.mesto }}<br /></p>
+      <h3 class="mb1">{{ about.attributes.ulice_cp }}</h3>
+      <p class="mb1">
+        {{ about.attributes.psc }} {{ about.attributes.mesto }}<br />
+      </p>
       <p class="mb0">
-        <i class="fa fa-phone"
-          ><a :href="`tel:${about.telefon}`">{{ about.telefon }}</a></i
+        <i class="fa fa-phone">
+          &nbsp;
+          <a :href="`tel:${about.attributes.telefon}`">{{
+            about.attributes.telefon
+          }}</a></i
         ><br />
-        <i class="fa fa-envelope"
-          ><a :href="`mailto:${about.mail}`">{{ about.email }}</a></i
+        <i class="fa fa-envelope">
+          &nbsp;
+          <a :href="`mailto:${about.attributes.mail}`">{{
+            about.attributes.email
+          }}</a></i
         ><br />
       </p>
     </div>
-    <div class="col col-12 sm-col-6 mb4">
-      <h3 class="mb1">San Jose</h3>
-      <p class="mb0">123 S Elsewhere St.,<br />San Jose, CA<br /></p>
-      <p class="mb0">
-        Mon-Thu 11am–2pm, 4pm–9pm<br />Fri-Sun 11am–3pm, 4pm–11pm<br />
-      </p>
-    </div>
+    <div v-html="about.html" class="col col-12 sm-col-6 mb4"></div>
   </div>
 </template>
 

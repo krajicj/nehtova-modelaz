@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 id="gallery" class="my4 theme2-anchored">Photo Gallery</h2>
+    <h2 id="gallery" class="my4 theme2-anchored">Galerie</h2>
     <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
     <amp-carousel
       class="my2 mxn3"

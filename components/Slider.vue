@@ -1,5 +1,5 @@
 <template>
-  <div class="center">
+  <div id="topNavigation" class="center">
     <!-- Start Fullpage Hero -->
     <figure class="ampstart-image-fullpage-hero m0 relative mb4">
       <amp-img
