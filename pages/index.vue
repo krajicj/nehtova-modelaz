@@ -43,7 +43,7 @@
 
         <!-- Gallery -->
 
-        <Gallery :images="images" />
+        <Gallery :images="images" :title="mainContent.attributes.titulek" />
       </article>
     </main>
 

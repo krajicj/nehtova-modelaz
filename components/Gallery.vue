@@ -14,7 +14,7 @@
         :src="image"
         width="400"
         height="300"
-        alt="Dining area"
+        :alt="title"
         on="tap:lightbox"
         role="button"
         tabindex="0"
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  props: ['images']
+  props: ['images', 'title']
 }
 </script>
 

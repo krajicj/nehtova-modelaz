@@ -8,6 +8,13 @@
           `${mainContent.nadpis} - ${mainContent.nadpis2} - ${mainContent.nadpis3}`
         "
         layout="fixed-height"
+        srcset="
+DSC_3232_diw37s_c_scale,w_1190.jpg 1190w,
+DSC_3232_diw37s_c_scale,w_1410.jpg 1410w,
+DSC_3232_diw37s_c_scale,w_1607.jpg 1607w,
+DSC_3232_diw37s_c_scale,w_1792.jpg 1792w,
+DSC_3232_diw37s_c_scale,w_1964.jpg 1964w,
+DSC_3232_diw37s_c_scale,w_2000.jpg 2000w"
         :src="mainContent.main_image"
       ></amp-img>
       <figcaption class="absolute top-0 right-0 bottom-0 left-0">
