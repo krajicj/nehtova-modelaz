@@ -10,6 +10,8 @@ oteviraci_doba: "\n"
 ulice_cp: Klatovská třída 1794/178
 psc: 301 00
 mesto: Plzeň
+telefon: "+420 604 349 095"
+email: a.krajicova@seznam.cz
 
 ---
 po, st, pá - **8:00 - 15:00**
