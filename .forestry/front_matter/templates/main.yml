@@ -2,6 +2,11 @@
 label: main
 hide_body: false
 fields:
+- name: titulek
+  type: text
+  config:
+    required: false
+  label: titulek
 - name: nadpis
   type: textarea
   default: ''
@@ -21,11 +26,6 @@ fields:
   config:
     required: false
   label: Nadpis 3
-- name: titulek
-  type: text
-  config:
-    required: false
-  label: titulek
 - name: obsah_nadpis
   type: text
   config:
@@ -45,5 +45,10 @@ fields:
   config:
     maxSize: 64
   label: Úvodní foto
+- name: sekce_nadpis
+  type: text
+  config:
+    required: false
+  label: Sekce nadpis
 pages:
 - content/main.md
