@@ -22,16 +22,16 @@
           <a class="ampstart-nav-link" href="#">Úvod</a>
         </li>
         <li
-          v-for="(section, index) in sections"
+          v-for="section in sections"
           :key="section.titulek"
           class="ampstart-nav-item "
         >
-          <a class="ampstart-nav-link" :href="`#section-${index}`">
+          <a class="ampstart-nav-link" :href="`#${section.attributes.id}`">
             {{ section.attributes.titulek }}
           </a>
         </li>
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#locations">Kontakt</a>
+          <a class="ampstart-nav-link" href="#kontakt">Kontakt</a>
         </li>
       </ul>
     </nav>

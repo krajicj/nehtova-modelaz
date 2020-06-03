@@ -1134,8 +1134,8 @@ html {
   }
   .h1,
   h1 {
-    font-size: 2.25rem;
-    line-height: 1.33333;
+    font-size: 3.25rem;
+    line-height: 3.75rem;
   }
   .h2,
   h2 {
@@ -1159,8 +1159,8 @@ html {
   }
   .h6,
   h6 {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
   h1,
   h2,
@@ -1326,7 +1326,7 @@ html {
   }
   .ampstart-fullpage-hero-heading {
     line-height: 3.5rem;
-    padding-top: 25vh;
+    padding-top: 22vh;
   }
   .ampstart-fullpage-hero-cta {
     background: transparent;
@@ -1804,7 +1804,8 @@ html {
 }
 
 .lune-landing-title-middle {
-  animation-delay: calc(.4s + .1s)
+  animation-delay: calc(.4s + .1s);
+  
 }
 
 .lune-landing-title-bottom {
@@ -1813,6 +1814,52 @@ html {
 
 .ampstart-btn {
   animation-delay: calc(.4s + 3 * .1s);
+}
+
+.angleAnime {
+  -webkit-animation: bounce 1.8s infinite ease-in-out;
+  animation: bounce 1.8s infinite ease-in-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@keyframes bounce{
+  20%,53%,80%,from,to{
+    -webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);
+    animation-timing-function:cubic-bezier(.215,.61,.355,1);
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+  }
+  40%,43%{
+    -webkit-animation-timing-function:cubic-bezier(.755,.050,.855,.060);
+    animation-timing-function:cubic-bezier(.755,.050,.855,.060);
+    -webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)
+  }
+  70%{
+    -webkit-animation-timing-function:cubic-bezier(.755,.050,.855,.060);
+    animation-timing-function:cubic-bezier(.755,.050,.855,.060);
+    -webkit-transform:translate3d(0,-15px,0);
+    transform:translate3d(0,-15px,0)
+  }
+  90%{
+    -webkit-transform:translate3d(0,-4px,0);
+    transform:translate3d(0,-4px,0)
+  }
+  }
+  .bounce{
+    -webkit-animation-name:bounce;
+    animation-name:bounce;
+    -webkit-transform-origin:
+    center bottom;
+    transform-origin:center bottom
+  }
+
+.scrollDownBtn{
+  font-size: 3.5rem;
+  padding-bottom: 15vh;
+  cursor: pointer;
 }
 /*
 .lune-landing-title-top {

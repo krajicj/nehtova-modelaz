@@ -30,10 +30,10 @@
         </p>
 
         <Section
-          v-for="(section, index) in sections"
+          v-for="section in sections"
           :key="section.titulek"
           :section="section.attributes"
-          :id="`section-${index}`"
+          :id="section.attributes.id"
         />
 
         <About :about="about" />
@@ -77,6 +77,15 @@ export default {
       about: {}
     }
   },
+  head () {
+    return {
+      title: this.mainContent.titulek,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: this.mainContent.nadpis, content: `${this.mainContent.titulek} - ${this.mainContent.nadpis3}` }
+      ]
+    }
+  },
   created () {
     const mainContentMarkup = require(`~/content/main.md`);
     this.mainContent = mainContentMarkup.attributes;
@@ -86,13 +95,13 @@ export default {
 
   },
   async asyncData () {
-  //  const slides = [];
+    //  const slides = [];
     const images = [];
 
-/*
-    const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
-    imgs.keys().forEach(key => (slides.push("slider/" + key)));
-*/
+    /*
+        const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
+        imgs.keys().forEach(key => (slides.push("slider/" + key)));
+    */
     const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
     imgsGal.keys().forEach(key => (images.push("gallery/" + key)));
 
@@ -100,11 +109,19 @@ export default {
     const sectionsAll = await require.context("~/content/sections/", true, /\.md$/)
     const sections = sectionsAll.keys().map((key) => {
       // give back the value of each post context
+      sectionsAll(key).attributes.id = encodeID(sectionsAll(key).attributes.titulek).toLowerCase();
       return sectionsAll(key)
     });
 
 
-    return {  images, sections };
+    return { images, sections };
   }
+}
+
+function encodeID (s) {
+  if (s === '') return '_';
+  return s.replace(/[^a-zA-Z0-9.-]/g, function (match) {
+    return '_';
+  });
 }
 </script>

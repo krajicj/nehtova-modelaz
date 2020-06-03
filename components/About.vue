@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 id="locations" class="my4 theme2-anchored">
+    <h2 id="kontakt" class="my4 theme2-anchored">
       {{ about.titulek }}
     </h2>
     <div class="col col-12 sm-col-6 mb4">

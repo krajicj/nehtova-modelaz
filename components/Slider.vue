@@ -27,10 +27,11 @@
         </header>
         <footer class="absolute left-0 right-0 bottom-0">
           <a
-            class="ampstart-btn caps inline-block ampstart-fullpage-hero-cta  m3 text-decoration-none lune-anim-move-up"
+            class="scrollDownBtn inline-block ampstart-fullpage-hero-cta  m3 text-decoration-none lune-anim-move-up"
             on="tap:content.scrollTo(duration=800)"
-            >Více</a
           >
+            <i class="fa fa-angle-double-down angleAnime"></i>
+          </a>
         </footer>
       </figcaption>
     </figure>
