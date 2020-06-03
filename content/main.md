@@ -7,5 +7,6 @@ nadpis: nehtová modeláž
 nadpis2: Alena Krajícová
 nadpis3: Plzeň
 main_image: "/dsc_3232.jpg"
+obsah_nadpis: O mně
 
 ---
