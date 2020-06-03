@@ -38,10 +38,11 @@
           :section="section.attributes"
           :id="section.attributes.id"
         />
-
+        <hr />
         <About :about="about" />
 
         <!-- Gallery -->
+
         <Gallery :images="images" />
       </article>
     </main>
