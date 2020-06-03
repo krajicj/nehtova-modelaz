@@ -26,6 +26,11 @@ fields:
   config:
     required: false
   label: titulek
+- name: obsah_nadpis
+  type: text
+  config:
+    required: false
+  label: Obsah nadpis
 - name: obsah
   type: textarea
   default: ''
