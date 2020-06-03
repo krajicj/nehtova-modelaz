@@ -26,5 +26,15 @@ fields:
   config:
     required: false
   label: Město
+- name: telefon
+  type: text
+  config:
+    required: false
+  label: Telefon
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
 pages:
 - content/about.md
