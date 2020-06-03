@@ -31,6 +31,12 @@ html {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 1px;
+    color: #adacac98;
+    background-color: #adacac98;
+    border: none;
   }
   pre {
     font-family: monospace, monospace;

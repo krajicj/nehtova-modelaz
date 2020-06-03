@@ -23,11 +23,13 @@
     <main id="content" role="main">
       <article class="px3">
         <h2 id="story" class="my4 theme2-anchored">
-          {{ mainContent.titulek }}
+          {{ mainContent.obsah_nadpis }}
         </h2>
         <p class="mb1 ampstart-dropcap">
           {{ mainContent.obsah }}
         </p>
+
+        <hr />
 
         <Section
           v-for="section in sections"

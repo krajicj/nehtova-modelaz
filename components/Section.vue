@@ -1,6 +1,6 @@
 <template>
   <div :id="id" class="section">
-    <h2 class="mb4">{{ section.titulek }}</h2>
+    <h3 class="mb4">{{ section.titulek }}</h3>
     <!-- <amp-img
       :src="section.obrazek"
       width="1280"
