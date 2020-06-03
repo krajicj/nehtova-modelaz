@@ -1,5 +1,5 @@
 ---
-titulek: Kde mně najdete
+titulek: Kde mě najdete
 adresa: |-
   Klatovská třída 1794/178
 
