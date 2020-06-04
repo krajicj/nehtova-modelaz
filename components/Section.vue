@@ -1,16 +1,16 @@
 <template>
-  <div class="row">
-    <div v-if="isOdd" class="col col-4 "></div>
-
-    <div class="col col-8 polaroid">
+  <div class="row outer">
+    <div class="col col-4 ">
       <amp-img
-        class="polaroid-image"
+        class="inner"
         :src="section.obrazek"
-        width="640"
-        height="480"
+        width="800"
+        height="600"
         layout="responsive"
         :alt="section.titulek"
-      ></amp-img>
+      ></amp-img>      
+    </div>
+    <div class="col col-8">
       <div class="polaroid-text">
         <h3 class="">{{ section.titulek }}</h3>
         <p class="">
@@ -18,7 +18,6 @@
         </p>
       </div>
     </div>
-    <div v-id="!isOdd" class="col col-4"></div>
   </div>
 </template>
 

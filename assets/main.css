@@ -1892,17 +1892,19 @@ html {
 }
 */
 
-
-
-
-.polaroid{
-  border: 1px solid #cecaca7a;
+.inner{
+  flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
-
-.polaroid-image{
-  margin: 1rem;
-}
-
-.polaroid-text{
-  margin: 0 1rem 0 1rem;
+.outer {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 40px;
+ /* height: 100vh */
 }
