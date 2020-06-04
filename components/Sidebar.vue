@@ -19,7 +19,9 @@
     <nav class="ampstart-sidebar-nav ampstart-nav">
       <ul class="list-reset m0 p0 ampstart-label">
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#">Úvod</a>
+          <a class="ampstart-nav-link" on="tap:top.scrollTo(duration=800)"
+            >Úvod</a
+          >
         </li>
         <li
           v-for="section in sections"
@@ -28,17 +30,13 @@
         >
           <a
             class="ampstart-nav-link"
-            :href="`#${section.attributes.id}`"
             :on="`tap:${section.attributes.id}.scrollTo(duration=800)`"
           >
             {{ section.attributes.titulek }}
           </a>
         </li>
         <li class="ampstart-nav-item ">
-          <a
-            class="ampstart-nav-link"
-            href="#kontakt"
-            on="tap:kontakt.scrollTo(duration=800)"
+          <a class="ampstart-nav-link" on="tap:kontakt.scrollTo(duration=800)"
             >Kontakt</a
           >
         </li>

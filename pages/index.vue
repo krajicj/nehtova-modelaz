@@ -2,6 +2,7 @@
   <div>
     <!-- Start Navbar -->
     <header
+      id="top"
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 "
     >
       <div
@@ -33,12 +34,13 @@
         </h2>
 
         <Section
-          v-for="section in sections"
+          v-for="(section, index) in sections"
           :key="section.titulek"
           :section="section.attributes"
           :id="section.attributes.id"
+          :index="index"
         />
-        <hr />
+
         <About :about="about" />
 
         <!-- Gallery -->

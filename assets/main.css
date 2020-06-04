@@ -671,6 +671,9 @@ html {
   .col-12 {
     width: 100%;
   }
+  .row{
+    display: inline-block;
+  }
   @media (min-width: 40.06rem) {
     .sm-col {
       float: left;
@@ -1868,6 +1871,7 @@ html {
   padding-bottom: 15vh;
   cursor: pointer;
 }
+
 /*
 .lune-landing-title-top {
   left: calc(-6% - .26em);
@@ -1887,3 +1891,18 @@ html {
   font-weight: 900
 }
 */
+
+
+
+
+.polaroid{
+  border: 1px solid #cecaca7a;
+}
+
+.polaroid-image{
+  margin: 1rem;
+}
+
+.polaroid-text{
+  margin: 0 1rem 0 1rem;
+}
