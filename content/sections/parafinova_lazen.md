@@ -7,6 +7,6 @@ text: Pokožka na rukou patří k nejvíce namáhaným částem těla. Běžná 
   obličeji a krku. Pokud toužíte po dokonalosti rukou, jsou pro vás ideální speciální
   parafíny určené na ruce. Parafínové zábaly blahodárně působí na pokožku rukou a
   kombinují zdravotní i estetické účinky.
-obrazek: ''
+obrazek: "/parafin.jpg"
 
 ---
