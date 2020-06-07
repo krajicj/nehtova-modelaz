@@ -206,10 +206,10 @@ html {
     font-size: 2.25rem;
   }
   .h2 {
-    font-size: 1.75rem;
+    font-size: 2.0rem;
   }
   .h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .h4 {
     font-size: 1rem;
@@ -1075,14 +1075,14 @@ html {
   body {
     background: #fdfdfd;
     color: rgb(22, 22, 22);
-    font-family: Lora, serif;
+    font-family: Roboto, sans-serif;
     min-width: 315px;
     overflow-x: hidden;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
   }
   main {
-    max-width: 700px;
+    max-width: 1170px;
     margin: 0 auto;
   }
   p {
@@ -1149,12 +1149,12 @@ html {
   }
   .h2,
   h2 {
-    font-size: 1.75rem;
+    font-size: 2.0rem;
     line-height: 1.71429;
   }
   .h3,
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.6;
   }
   .h4,
@@ -1182,6 +1182,7 @@ html {
     padding: 0;
     font-weight: 400;
     letter-spacing: 0.06rem;
+    color: #c7770f;
   }
   a,
   a:active,
@@ -1337,6 +1338,7 @@ html {
   .ampstart-fullpage-hero-heading {
     line-height: 3.5rem;
     padding-top: 22vh;
+    color: #fff;
   }
   .ampstart-fullpage-hero-cta {
     background: transparent;
@@ -1742,7 +1744,7 @@ html {
   h1,
   h2,
   h3 {
-    font-family: Playfair Display, serif;
+    font-family: Cinzel, sans-serif;
   }
   .h1,
   h1 {
@@ -1762,7 +1764,7 @@ html {
   h4,
   h5,
   h6 {
-    font-family: Lato, sans-serif;
+    font-family: Cinzel, sans-serif;
     letter-spacing: 0;
   }
   .ampstart-fullpage-hero-heading-text {
@@ -1898,6 +1900,7 @@ html {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  margin: 2rem;
 }
 .outer {
   display: flex;
@@ -1905,10 +1908,11 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: top;
-  padding-bottom: 40px;
+  padding-bottom: 1rem;
  /* height: 100vh */
 }
 
-.imageOdd{
-  
+.section-heading{
+  text-align: center;
+  padding-bottom: 1.5rem;
 }

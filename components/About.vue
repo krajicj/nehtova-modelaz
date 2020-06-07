@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 id="kontakt" class="my4 theme2-anchored">
+    <h2 id="kontakt" class="section-heading">
       {{ about.attributes.titulek }}
     </h2>
     <div class="col col-12 sm-col-6 mb4">

@@ -23,13 +23,13 @@
 
     <main id="content" role="main">
       <article class="px3">
-        <h2 id="story" class="my4 theme2-anchored">
+        <h2 class="section-heading">
           {{ mainContent.attributes.obsah_nadpis }}
         </h2>
         <div v-html="mainContent.html"></div>
 
         <hr />
-        <h2 class="my4 theme2-anchored">
+        <h2 class="section-heading">
           {{ mainContent.attributes.sekce_nadpis }}
         </h2>
 
