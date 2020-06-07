@@ -673,6 +673,7 @@ html {
   }
   .row{
     display: inline-block;
+    width: 100%;
   }
   @media (min-width: 40.06rem) {
     .sm-col {

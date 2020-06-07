@@ -4,7 +4,7 @@
     <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
     <amp-carousel
       class="my2 mxn3"
-      height="300"
+      height="227"
       layout="fixed-height"
       type="carousel"
     >
@@ -13,7 +13,7 @@
         :key="image"
         :src="image"
         width="400"
-        height="300"
+        height="227"
         :alt="title"
         on="tap:lightbox"
         role="button"

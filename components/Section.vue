@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row outer" v-if="isOdd">
+    <div :id="id" class="row outer" v-if="isOdd">
       <div class="col col-4">
         <amp-img
           class="inner imageOdd"
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="row outer" v-else>
+    <div :id="id" class="row outer" v-else>
       <div class="col col-8">
         <div class="polaroid-text">
           <h3 class="">{{ section.titulek }}</h3>
