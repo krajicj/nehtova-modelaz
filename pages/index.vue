@@ -36,7 +36,7 @@
         <Section
           v-for="(section, index) in sections"
           :key="section.titulek"
-          :section="section.attributes"
+          :section="section"
           :id="section.attributes.id"
           :index="index"
         />
