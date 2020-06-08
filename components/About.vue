@@ -3,7 +3,7 @@
     <h2 id="kontakt" class="section-heading">{{ about.attributes.titulek }}</h2>
     <div class="row">
       <div class="col col-6 sm-col-12 ">
-        <h3 class="mb1">{{ about.attributes.ulice_cp }}</h3>
+        <span class="h3">{{ about.attributes.ulice_cp }}</span>
         <p class="mb1">
           {{ about.attributes.psc }} {{ about.attributes.mesto }}
           <br />

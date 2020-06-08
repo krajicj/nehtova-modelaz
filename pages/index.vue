@@ -109,7 +109,10 @@ export default {
         imgs.keys().forEach(key => (slides.push("slider/" + key)));
     */
     const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
-    imgsGal.keys().forEach(key => (images.push("gallery/" + key)));
+    imgsGal.keys().forEach(key => {
+      images.push("gallery/" + key);
+      console.log(key);
+    });
 
 
     const sectionsAll = await require.context("~/content/sections/", true, /\.md$/)

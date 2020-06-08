@@ -14,9 +14,8 @@
       <div class="col col-7 sm-col-12">
         <div class="">
           <h3 class="">{{ section.attributes.titulek }}</h3>
-          <p class="">
-            {{ section.attributes.text }}
-          </p>
+         <div v-html="section.html">            
+          </div>
         </div>
       </div>
     </div>
@@ -25,9 +24,8 @@
       <div class="col col-7 sm-col-12">
         <div class="">
           <h3 class="">{{ section.attributes.titulek }}</h3>
-          <p class="">
-            {{ section.attributes.text }}
-          </p>
+          <div v-html="section.html">            
+          </div>
         </div>
       </div>
       <div class="col col-5 sm-col-12">
