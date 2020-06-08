@@ -5,6 +5,6 @@ text: Gel laky jsou jedinečné především díky své jednoduché aplikaci na 
   stejně jednoduše jako běžný lak na nehty a necháte ho vytvrdit v UV lampě. Výsledkem
   jsou pak krásné pevné nehty k nerozeznání od gelových nehtů, které vám vydrží i
   několik týdnů bez dalších zásahů.
-obrazek: "/gellak.png"
+obrazek: "/gel-lak2.jpg"
 
 ---
