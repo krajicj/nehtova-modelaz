@@ -111,7 +111,6 @@ export default {
     const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
     imgsGal.keys().forEach(key => {
       images.push("gallery/" + key);
-      console.log(key);
     });
 
 

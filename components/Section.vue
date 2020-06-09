@@ -1,40 +1,20 @@
 <template>
-  <div>
-    <div :id="id" class="row outer" v-if="isOdd">
-      <div class="col col-5 sm-col-12">
-        <amp-img
-          class="inner imageOdd"
-          :src="section.attributes.obrazek"
-          width="900"
-          height="600"
-          layout="responsive"
-          :alt="section.attributes.titulek"
-        ></amp-img>
-      </div>
-      <div class="col col-7 sm-col-12">
+  <div :id="id">
+    <div class="web-section">
+      <div class="box-text flex-item" :class="{ 'section-right': isOdd }">
         <div class="">
           <h3 class="">{{ section.attributes.titulek }}</h3>
-         <div v-html="section.html">            
-          </div>
+          <div v-html="section.html"></div>
         </div>
       </div>
-    </div>
-
-    <div :id="id" class="row outer" v-else>
-      <div class="col col-7 sm-col-12">
-        <div class="">
-          <h3 class="">{{ section.attributes.titulek }}</h3>
-          <div v-html="section.html">            
-          </div>
-        </div>
-      </div>
-      <div class="col col-5 sm-col-12">
+      <div class="box-image flex-item " :class="{ 'section-left': isOdd }">
         <amp-img
-          class="inner imageNodd"
+          class=""
           :src="section.attributes.obrazek"
-          width="900"
-          height="600"
+          width="600"
+          height="400"
           layout="responsive"
+          sizes="(min-width: 768px) 400px, 80vw"
           :alt="section.attributes.titulek"
         ></amp-img>
       </div>
