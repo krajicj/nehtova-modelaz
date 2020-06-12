@@ -4,7 +4,7 @@ obsah: ''
 nadpis: nehtová modeláž
 nadpis2: Alena Krajícová
 nadpis3: Plzeň
-main_image: assets/images/dsc_3232.jpg
+main_image: "/images/dsc_3232.jpg"
 obsah_nadpis: O mně
 sekce_nadpis: 'Používám '
 
