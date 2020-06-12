@@ -13,7 +13,7 @@
         <div class="box-image flex-item " :class="{ 'section-left': isOdd }">
           <amp-img
             class=""
-            :src="section.attributes.obrazek"
+            :srcset="require(`~/assets${section.attributes.obrazek}`).srcSet"
             width="600"
             height="400"
             layout="responsive"

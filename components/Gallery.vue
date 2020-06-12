@@ -12,7 +12,7 @@
       <amp-img
         v-for="image in images"
         :key="image"
-        :src="image"
+        :srcset="require(`~/assets${image}`).srcSet"
         width="300"
         height="200"
         :alt="title"

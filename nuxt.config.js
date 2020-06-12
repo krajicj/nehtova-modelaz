@@ -32,6 +32,15 @@ export default {
     resourceHints: false
   },
   modules: ['nuxt-responsive-loader'],
+  responsiveLoader: {
+    // name: 'img/hello-world-[width].[ext]',
+    // sizes: [200, 500],
+    min: 640, // minimum image width generated
+    max: 1300, // maximum image width generated
+    steps: 5, // five sizes per image will be generated
+    placeholder: false, // no placeholder will be generated
+    quality: 80, // images are compressed with medium quality
+  },
   hooks: {
     // This hook is called before generatic static html files for SPA mode
     'generate:page': (page) => {
