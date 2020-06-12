@@ -18,18 +18,17 @@ DSC_3232_diw37s_c_scale,w_2000.jpg 2000w"
         :src="mainContent.main_image"
       ></amp-img>
       <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-        <header class="p3">
+        <header class="">
           <h1 class="ampstart-fullpage-hero-heading mb3 ">
-            <span
-              class="h6 block caps lune-anim-move-up lune-landing-title-top"
-              >{{ mainContent.nadpis2 }}</span
-            ><span
-              class="h1 block bold caps my1 lune-anim-move-up lune-landing-title-middle"
-              >{{ mainContent.nadpis }}</span
-            ><span
-              class="h6 block caps lune-anim-move-up lune-landing-title-bottom"
-              >{{ mainContent.nadpis3 }}</span
-            >
+            <span class="h6 block caps lune-anim-move-up ">{{
+              mainContent.nadpis2
+            }}</span
+            ><span class="h1 block bold caps my1 lune-anim-move-up ">{{
+              mainContent.nadpis
+            }}</span
+            ><span class="h6 block caps lune-anim-move-up ">{{
+              mainContent.nadpis3
+            }}</span>
           </h1>
         </header>
         <footer class="absolute left-0 right-0 bottom-0">

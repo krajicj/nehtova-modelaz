@@ -6,7 +6,7 @@ const modifyHtml = (html) => {
   // Remove every script tag from generated HTML
   html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
   // Add AMP script before </head>
-  const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js" async=""></script><script custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js" async=""></script><script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>'
+  const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js" async=""></script><script custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js" async=""></script><script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script><script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>'
 
   html = html.replace('</head>', ampScript + '</head>')
   return html
@@ -31,6 +31,7 @@ export default {
     // Disable resourceHints since we don't load any scripts for AMP
     resourceHints: false
   },
+  modules: ['nuxt-responsive-loader'],
   hooks: {
     // This hook is called before generatic static html files for SPA mode
     'generate:page': (page) => {

@@ -22,31 +22,33 @@
     <!-- End Navbar -->
 
     <main id="content" role="main">
-      <article class="px3">
-        <h2 class="section-heading">
-          {{ mainContent.attributes.obsah_nadpis }}
-        </h2>
-        <div v-html="mainContent.html"></div>
+      <div class="web-section-top">
+        <div class="web-content">
+          <h2 id="uvod" class="section-heading">
+            {{ mainContent.attributes.obsah_nadpis }}
+          </h2>
+          <div v-html="mainContent.html"></div>
+        </div>
+      </div>
 
-        <hr />
-        <h2 class="section-heading">
-          {{ mainContent.attributes.sekce_nadpis }}
-        </h2>
+      <h2 class="section-heading">
+        {{ mainContent.attributes.sekce_nadpis }}
+      </h2>
 
-        <Section
-          v-for="(section, index) in sections"
-          :key="section.titulek"
-          :section="section"
-          :id="section.attributes.id"
-          :index="index"
-        />
+      <Section
+        v-for="(section, index) in sections"
+        :key="section.titulek"
+        :section="section"
+        :id="section.attributes.id"
+        :index="index"
+        :count="sections.length"
+      />
 
-        <About :about="about" />
+      <About :about="about" />
 
-        <!-- Gallery -->
+      <!-- Gallery -->
 
-        <Gallery :images="images" :title="mainContent.attributes.titulek" />
-      </article>
+      <Gallery :images="images" :title="mainContent.attributes.titulek" />
     </main>
 
     <!-- Start Footer -->
