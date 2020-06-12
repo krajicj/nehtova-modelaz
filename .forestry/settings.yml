@@ -17,11 +17,6 @@ sections:
 - type: document
   path: content/about.md
   label: O firmě
-- type: directory
-  path: assets/gallery
-  label: Galerie
-  create: documents
-  match: "**/*"
 upload_dir: assets/images
 public_path: assets/images
 front_matter_path: ''
