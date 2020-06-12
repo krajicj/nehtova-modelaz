@@ -17,8 +17,11 @@ sections:
 - type: document
   path: content/about.md
   label: O firmě
-upload_dir: static
-public_path: ''
+- type: document
+  path: content/gallery.md
+  label: Galerie
+upload_dir: assets/images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
