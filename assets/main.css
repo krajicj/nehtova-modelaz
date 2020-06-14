@@ -1890,7 +1890,7 @@ html {
    height:12vh;
    display:inline-flex;
    vertical-align:top;
-   padding-bottom: 2rem;
+   padding-bottom: 4rem;
    justify-content:center;
    align-items:center;
  }
@@ -1975,6 +1975,48 @@ main{
 }
 
 
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #c7770f;
+  border: none;
+  color: #FFFFFF !important;
+  text-align: center;  
+  padding: 0.5rem;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  font-family: FontAwesome;
+  content: '\f041';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 
 @media screen and (max-width:768px){
   .web-section-type{
@@ -1987,5 +2029,9 @@ main{
     padding-top: 1rem;
   }
   .box-text{order:1;}
+
+  .button {
+    width: 100%;
+  }
   
 }

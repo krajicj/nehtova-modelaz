@@ -27,6 +27,12 @@
             </i>
             <br />
           </p>
+          <a
+            href="https://goo.gl/maps/YCeSLStiYoEnviuN8"
+            target="_blank"
+            class="button"
+            ><span>Mapa</span></a
+          >
         </div>
         <div v-html="about.html" class="col col-6 sm-col-12 "></div>
       </div>
