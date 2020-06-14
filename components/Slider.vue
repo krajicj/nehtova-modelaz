@@ -25,12 +25,25 @@
           </h1>
         </header>
         <footer class="absolute left-0 right-0 bottom-0">
-          <a
-            class="scrollDownBtn inline-block ampstart-fullpage-hero-cta  m3 text-decoration-none lune-anim-move-up"
-            on="tap:content.scrollTo(duration=800)"
-          >
-            <i class="fa fa-angle-double-down angleAnime"></i>
-          </a>
+          <div class="box">
+            <a
+              class="scrollDownBtn inline-block ampstart-fullpage-hero-cta  m3 text-decoration-none lune-anim-move-up"
+              on="tap:content.scrollTo(duration=800)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="angleAnime"
+                viewBox="0 0 110 85"
+              >
+                <path
+                  d="m 5 5 l 50 50 l 50 -50 m -100 25 l 50 50 l 50 -50"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="5"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </footer>
       </figcaption>
     </figure>

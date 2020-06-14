@@ -1878,6 +1878,23 @@ html {
   cursor: pointer;
 }
 
+.scrollDownBtn > svg{
+  width: 100%;
+	height: 100%;
+	
+}
+
+ 
+ .box {
+   width:13vh;
+   height:13vh;
+   display:inline-flex;
+   vertical-align:top;
+   padding-bottom: 2rem;
+   justify-content:center;
+   align-items:center;
+ }
+
 
 .inner{
   flex-basis: 0;
