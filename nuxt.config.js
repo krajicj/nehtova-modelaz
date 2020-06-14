@@ -22,6 +22,7 @@ export default {
       { rel: 'canonical', href: '/' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap' },
       // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }
     ]
   },
   css: ['~/assets/main.css'],
