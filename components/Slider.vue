@@ -33,13 +33,13 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="angleAnime"
-                viewBox="0 0 110 85"
+                viewBox="0 0 100 95"
               >
                 <path
-                  d="m 5 5 l 50 50 l 50 -50 m -100 25 l 50 50 l 50 -50"
+                  d="m 5 5 l 45 50 l 45 -50 m -90 35 l 45 50 l 45 -50"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="5"
+                  stroke-width="10"
                 ></path>
               </svg>
             </a>
