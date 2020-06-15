@@ -36,5 +36,15 @@ fields:
   config:
     required: false
   label: Email
+- name: facebook
+  type: text
+  config:
+    required: false
+  label: facebook
+- name: instagram
+  type: text
+  config:
+    required: false
+  label: instagram
 pages:
 - content/about.md
