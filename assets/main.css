@@ -1886,8 +1886,8 @@ html {
 
  
  .box {
-   width:12vh;
-   height:12vh;
+   width:10vh;
+   height:10vh;
    display:inline-flex;
    vertical-align:top;
    padding-bottom: 4rem;
