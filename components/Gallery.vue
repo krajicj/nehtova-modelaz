@@ -1,6 +1,6 @@
 <template>
   <div class="web-content">
-    <h2 id="gallery" class="section-heading">Galerie</h2>
+    <h2 id="galerie" class="section-heading">Galerie</h2>
 
     <amp-carousel
       lightbox

@@ -34,7 +34,7 @@
           <a class="ampstart-nav-link" href="#kontakt">Kontakt</a>
         </li>
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#gallery">Galerie</a>
+          <a class="ampstart-nav-link" href="#galerie">Galerie</a>
         </li>
       </ul>
     </nav>
