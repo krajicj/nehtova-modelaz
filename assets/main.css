@@ -1974,13 +1974,16 @@ main{
   order:1; 
 }
 
+.button a {
+  color: #FFFFFF;
+}
 
 .button {
   display: inline-block;
   border-radius: 4px;
   background-color: #c7770f;
   border: none;
-  color: #FFFFFF !important;
+  color: #FFFFFF;
   text-align: center;  
   padding: 0.5rem;
   width: 50%;
@@ -1995,6 +1998,7 @@ main{
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  color: #FFFFFF;
 }
 
 .button span:after {

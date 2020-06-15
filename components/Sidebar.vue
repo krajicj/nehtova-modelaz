@@ -42,12 +42,12 @@
     <ul
       class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4"
     >
-      <li v-if="about.facebook !== ''">
+      <li v-if="about.facebook">
         <a
           :href="about.instagram"
           target="_blank"
           class="inline-block p1"
-          aria-label="Link to AMP HTML Facebook"
+          aria-label="Link to Facebook"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -62,12 +62,12 @@
         ></a>
       </li>
 
-      <li v-if="about.instagram !== ''">
+      <li v-if="about.instagram">
         <a
           :href="about.instagram"
           target="_blank"
           class="inline-block p1"
-          aria-label="Link to AMP HTML Instagram"
+          aria-label="Link to Instagram"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
