@@ -16,7 +16,7 @@
       </div>
     </header>
 
-    <Sidebar :sections="sections" />
+    <Sidebar :sections="sections" :about="about.attributes" />
 
     <Slider :slides="slides" :mainContent="mainContent.attributes" />
     <!-- End Navbar -->

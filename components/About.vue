@@ -34,7 +34,10 @@
             ><span>Mapa</span></a
           >
         </div>
-        <div v-html="about.html" class="col col-6 sm-col-12 "></div>
+        <div class="col col-6 sm-col-12 ">
+          <br />
+          <div v-html="about.html" class=""></div>
+        </div>
       </div>
     </div>
   </div>
