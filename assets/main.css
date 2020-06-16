@@ -1154,7 +1154,7 @@ html {
   }
   .h2,
   h2 {
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     line-height: 1.71429;
   }
   .h3,
@@ -1892,7 +1892,7 @@ html {
    height:10vh;
    display:inline-flex;
    vertical-align:top;
-   padding-bottom: 5rem;
+   padding-bottom: 7rem;
    justify-content:center;
    align-items:center;
  }
@@ -2043,6 +2043,11 @@ main{
 }
 
 .ampstart-nav-item > a.ampstart-nav-link:hover{
+  color: #c7770f;
+  font-weight: bold;
+}
+
+.main-content a{
   color: #c7770f;
   font-weight: bold;
 }

@@ -27,7 +27,7 @@
           <h2 id="uvod" class="section-heading">
             {{ mainContent.attributes.obsah_nadpis }}
           </h2>
-          <div v-html="mainContent.html"></div>
+          <div v-html="mainContent.html" class="main-content"></div>
         </div>
       </div>
 
