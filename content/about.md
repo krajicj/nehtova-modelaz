@@ -13,7 +13,7 @@ mesto: Plzeň
 telefon: "+420 604 349 095"
 email: a.krajicova@seznam.cz
 facebook: ''
-instagram: ''
+instagram: https://www.instagram.com/aknehtovamodelaz/
 
 ---
 po, st, pá - **8:00 - 15:00**
