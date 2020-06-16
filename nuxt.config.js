@@ -34,7 +34,7 @@ export default {
     'nuxt-responsive-loader',
     ['@nuxtjs/robots', {
       UserAgent: '*',
-      Sitemap: '/sitemap.xml'
+      Sitemap: 'https://www.nehtova-modelaz-plzen.cz/sitemap.xml'
     }],
     ['@nuxtjs/sitemap', {
       hostname: 'https://www.nehtova-modelaz-plzen.cz/'
