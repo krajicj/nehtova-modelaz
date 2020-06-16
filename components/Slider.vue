@@ -14,13 +14,13 @@
         <header class="">
           <h1 class="ampstart-fullpage-hero-heading mb3 ">
             <span class="h6 block caps lune-anim-move-up ">{{
-              mainContent.nadpis2
+              mainContent.nadpis2 &nbsp;
             }}</span
             ><span class="h1 block bold caps my1 lune-anim-move-up ">{{
-              mainContent.nadpis
+              mainContent.nadpis &nbsp;
             }}</span
             ><span class="h6 block caps lune-anim-move-up ">{{
-              mainContent.nadpis3
+              mainContent.nadpis3 &nbsp;
             }}</span>
           </h1>
         </header>

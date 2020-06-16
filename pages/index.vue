@@ -82,7 +82,8 @@ export default {
       images: [],
       mainContent: {},
       sections: [],
-      about: {}
+      about: {},
+      ogImage: ''
     }
   },
   head () {
@@ -90,7 +91,12 @@ export default {
       title: this.mainContent.attributes.titulek,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { name: 'description', content: `${this.mainContent.attributes.obsah}` }
+        { name: 'description', content: `${this.mainContent.attributes.obsah}` },
+        { name: 'og:title', content: `${this.mainContent.attributes.titulek}` },
+        { name: 'og:description', content: `${this.mainContent.attributes.obsah}` },
+        { name: 'og:image', content: this.ogImage }
+
+
       ]
     }
   },
@@ -100,6 +106,9 @@ export default {
 
     const aboutContentMarkup = require(`~/content/about.md`);
     this.about = aboutContentMarkup;
+
+    const ogImage = require(`~/assets/og-nehtova-modelaz.jpg`);
+    this.ogImage = ogImage;
 
   },
   async asyncData () {
