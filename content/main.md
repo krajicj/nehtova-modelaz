@@ -1,5 +1,5 @@
 ---
-titulek: Alena Krajícová - nehtová modeláž
+titulek: Alena Krajícová - nehtová modeláž Plzeň
 obsah: Nehtová modeláž Plzeň. Kvalitní a profesionální péče. Chcete si odpočinout
   a nechat si zkrášlit své ruce? Svěřte se do rukou odborníka s dlouholetou praxí
   v oboru. Navštivte mě v salónu v Plzni.
