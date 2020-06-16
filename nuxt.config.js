@@ -6,7 +6,7 @@ const modifyHtml = (html) => {
   // Remove every script tag from generated HTML
   html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
   // Add AMP script before </head>
-  const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js" async=""></script><script custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js" async=""></script><script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script><script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>'
+  const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js" async=""></script><script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script><script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>'
 
   html = html.replace('</head>', ampScript + '</head>')
   return html
@@ -21,7 +21,6 @@ export default {
     link: [
       { rel: 'canonical', href: '/' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap' },
-      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato' },
       { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }
     ]
   },
