@@ -12,19 +12,21 @@
             <br />
           </p>
           <p class="mb0">
-            <i class="fa fa-phone">
+            <a :href="`tel:${about.attributes.telefon}`">
+              <i class="fa fa-phone"> </i>
               &nbsp;
-              <a :href="`tel:${about.attributes.telefon}`">
-                {{ about.attributes.telefon }}
-              </a>
-            </i>
+              {{ about.attributes.telefon }}
+            </a>
+
             <br />
-            <i class="fa fa-envelope">
-              &nbsp;
-              <a :href="`mailto:${about.attributes.mail}`">
-                {{ about.attributes.email }}
-              </a>
-            </i>
+
+            <a :href="`mailto:${about.attributes.email}`">
+              <i class="fa fa-envelope">
+                &nbsp;
+              </i>
+              {{ about.attributes.email }}
+            </a>
+
             <br />
           </p>
           <a

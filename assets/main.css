@@ -43,6 +43,7 @@ html {
     font-size: 1em;
   }
   a {
+    padding: 0.5rem 0;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -50,6 +51,7 @@ html {
   a:active,
   a:hover {
     outline-width: 0;
+    color: #c7770f;
   }
   abbr[title] {
     border-bottom: none;
@@ -2038,4 +2040,9 @@ main{
     width: 100%;
   }
   
+}
+
+.ampstart-nav-item > a.ampstart-nav-link:hover{
+  color: #c7770f;
+  font-weight: bold;
 }

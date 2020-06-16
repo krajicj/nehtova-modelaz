@@ -90,7 +90,7 @@ export default {
       title: this.mainContent.attributes.titulek,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { name: 'description', content: `${this.mainContent.attributes.titulek} - ${this.mainContent.attributes.nadpis3}` }
+        { name: 'description', content: `${this.mainContent.attributes.obsah}` }
       ]
     }
   },
