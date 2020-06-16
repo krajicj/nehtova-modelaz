@@ -9,4 +9,4 @@ obsah_nadpis: O mně
 sekce_nadpis: 'Používám '
 
 ---
-Chcete aby vaše nehty byly **krásné** a zároveň **zdravé**. Svěřte je do mých rukou. Za dobu své 18 leté praxe jsem nasbírala velké množství zkušeností, díky kterým budou vaše nehty v té nejlepší péči. Veškeré pilování provádím jen pomocí **ručních pilníků**, tak aby vaše nehty netrpěly.
+Jmenuji se Alena Krajícová a **nehtové modeláži** se věnuji již řadu let. Umím kompletní modeláž nehtů **UV gelem**, potažení vlastních nehtů **GEL lakem** a širokou škálu **zdobení** (barevné gely, bílá i barevná francouzská manikůra, třpytky, kamínky, razítka, ruční malování na nehty a mnoho dalších). Za dobu své mnohaleté praxe jsem nasbírala velké množství zkušeností, díky kterým budou vaše nehty v té nejlepší péči. Veškeré pilování provádím jen pomocí **ručních pilníků**, tak aby vaše nehty netrpěly. Pokud chcete aby vaše nehty byly **krásné** a zároveň **zdravé**. Svěřte je do mých rukou.
