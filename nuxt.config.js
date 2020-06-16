@@ -30,7 +30,14 @@ export default {
     // Disable resourceHints since we don't load any scripts for AMP
     resourceHints: false
   },
-  modules: ['nuxt-responsive-loader'],
+  modules: [
+    'nuxt-responsive-loader',
+    ['@nuxtjs/robots', {
+      UserAgent: '*',
+      Sitemap: '/sitemap.xml'
+    }],
+    '@nuxtjs/sitemap'
+  ],
   responsiveLoader: {
     // name: 'img/hello-world-[width].[ext]',
     // sizes: [200, 500],
