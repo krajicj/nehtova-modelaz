@@ -37,7 +37,7 @@ export default {
       Sitemap: '/sitemap.xml'
     }],
     ['@nuxtjs/sitemap', {
-      hostname: 'https://www.nehtova-modelaz-plzen.cz'
+      hostname: 'https://www.nehtova-modelaz-plzen.cz/'
     }]
   ],
   responsiveLoader: {
