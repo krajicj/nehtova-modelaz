@@ -36,7 +36,9 @@ export default {
       UserAgent: '*',
       Sitemap: '/sitemap.xml'
     }],
-    '@nuxtjs/sitemap'
+    ['@nuxtjs/sitemap', {
+      hostname: 'https://www.nehtova-modelaz-plzen.cz/'
+    }]
   ],
   responsiveLoader: {
     // name: 'img/hello-world-[width].[ext]',
