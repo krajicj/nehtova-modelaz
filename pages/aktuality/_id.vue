@@ -134,8 +134,8 @@ export default {
       }
     });
 
-    const ogImage = require(`~/assets${post.attributes.obrazek}`);
-    return { post, ogImage };
+    //const ogImage = require(`~/assets${post.attributes.obrazek}`);
+    return { post };
   }
 }
 
