@@ -1,0 +1,13 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: titulek
+  label: titulek
+- type: textarea
+  name: text
+  label: text
+- type: file
+  name: obrazek
+  label: obrazek
