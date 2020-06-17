@@ -3,7 +3,7 @@ titulek: Ode dneška už mě naleznete i na instagramu
 date: 2020-06-18T22:00:00Z
 text: <p>Ode dneška už mě najdete i na <strong>instagramu </strong>pod účtem <a href="https://www.instagram.com/aknehtovamodelaz/"
   title="instagram" target="_blank">@aknehtovamodelaz</a>. Budu se zde snažit sdílet
-  obrázky mé práce. Velmi mě potěší, pokud zveřejníte nehty ode mě a označíte mi.</p>
+  obrázky mé práce. Velmi mě potěší, pokud zveřejníte nehty ode mě a označíte mě.</p>
 obrazek: "/images/img_5313.jpg"
 gallery:
 - "/images/001gel-lak2.jpg"
