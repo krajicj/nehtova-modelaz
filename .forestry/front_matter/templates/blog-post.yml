@@ -5,9 +5,22 @@ fields:
 - type: text
   name: titulek
   label: titulek
+- name: date
+  type: datetime
+  label: Datum
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - type: textarea
   name: text
   label: text
 - type: file
   name: obrazek
   label: obrazek
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Galerie
