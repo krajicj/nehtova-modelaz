@@ -5,7 +5,7 @@
         <div class="box-text flex-item" :class="{ 'section-right': isOdd }">
           <div class="">
             <h2 v-if="post.attributes.url" class="h3">
-              <a :href="`aktuality/${post.attributes.url}`">
+              <a :href="`${post.attributes.url}`">
                 {{ post.attributes.titulek }}
               </a>
             </h2>
@@ -19,7 +19,7 @@
             <a
               class="post-show-more"
               v-if="post.attributes.url"
-              :href="`aktuality/${post.attributes.url}`"
+              :href="`${post.attributes.url}`"
               >Více...</a
             >
           </div>
