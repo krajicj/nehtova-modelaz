@@ -13,4 +13,4 @@ gallery:
 title: instagram.md
 
 ---
-Ode dneška už mě najdete i na **instagramu** pod účtem [@aknehtovamodelaz](https://www.instagram.com/aknehtovamodelaz/ "instagram"). Budu se zde snažit sdílet obrázky mé práce. Velmi mě potěší, pokud zveřejníte nehty ode mě a označíte mi. Věřím, že časem se na tomto účtu objeví spousta krásných fotografií a každý tak bude mít přehled a inspiraci jaké **nehty** příště zvolit. Tak neváhejte a zavítejte do mého **salonu** v **Plzni**.
+Ode dneška už mě najdete i na **instagramu** pod účtem [@aknehtovamodelaz](https://www.instagram.com/aknehtovamodelaz/ "instagram"). Budu se zde snažit sdílet obrázky mé práce. Velmi mě potěší, pokud zveřejníte nehty ode mě a označíte mě. Věřím, že časem se na tomto účtu objeví spousta krásných fotografií a každý tak bude mít přehled a inspiraci jaké **nehty** příště zvolit. Tak neváhejte a zavítejte do mého **salonu** v **Plzni**.
