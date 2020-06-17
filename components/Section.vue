@@ -10,7 +10,9 @@
             <span v-if="hasDate"
               ><i class="fa fa-calendar"></i> {{ dateFormat }}</span
             >
-            <div class="section-text" v-html="section.attributes.text"></div>
+            <div class="section-text" v-html="section.attributes.text">
+              více
+            </div>
           </div>
         </div>
         <div class="box-image flex-item " :class="{ 'section-left': isOdd }">
