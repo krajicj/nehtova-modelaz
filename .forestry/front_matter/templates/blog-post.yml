@@ -17,6 +17,10 @@ fields:
 - type: textarea
   name: text
   label: text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: file
   name: obrazek
   label: obrazek
