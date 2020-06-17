@@ -107,22 +107,9 @@ export default {
 
   },
   async asyncData () {
-    //  const slides = [];
-    //const images = [];
 
-    /*
-        const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
-        imgs.keys().forEach(key => (slides.push("slider/" + key)));
-    */
-    /*
-     const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
-     imgsGal.keys().forEach(key => {
-       images.push("gallery/" + key);
-     });
- */
     const galleryMarkup = require(`~/content/gallery.md`);
     const images = galleryMarkup.attributes.gallery;
-
 
 
     const sectionsAll = await require.context("~/content/sections/", true, /\.md$/)
