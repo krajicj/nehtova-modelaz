@@ -1,6 +1,6 @@
 <template>
-  <div class="web-content">
-    <h2 id="galerie" class="section-heading">Galerie</h2>
+  <div v-if="images.length" class="web-content">
+    <h2 v-if="heading" id="galerie" class="section-heading">{{ heading }}</h2>
 
     <amp-carousel
       lightbox
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  props: ['images', 'title']
+  props: ['images', 'title', 'heading']
 }
 </script>
 

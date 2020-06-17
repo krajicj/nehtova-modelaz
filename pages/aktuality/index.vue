@@ -5,17 +5,21 @@
     <Sidebar :mainContent="mainContent" :about="about.attributes" />
 
     <main id="content" role="main">
-      <h2 class="section-heading">
-        Aktuality
-      </h2>
+      <div class="web-section-top">
+        <div class="web-content">
+          <h1 class="section-heading">
+            Aktuality
+          </h1>
+        </div>
+      </div>
 
-      <Section
-        v-for="(section, index) in sections"
-        :key="section.titulek"
-        :section="section"
-        :id="section.attributes.id"
+      <Post
+        v-for="(post, index) in posts"
+        :key="post.titulek"
+        :post="post"
+        :id="post.attributes.id"
         :index="index"
-        :count="sections.length"
+        :count="post.length"
       />
 
       <About :about="about" />
@@ -34,22 +38,23 @@
 </template>
 
 <script>
-import PageHeader from "../components/Header";
-import Sidebar from "../components/Sidebar";
-import Section from "../components/Section";
-import About from "../components/About";
+import PageHeader from "../../components/Header";
+import Sidebar from "../../components/Sidebar";
+import Post from "../../components/Post";
+import About from "../../components/About";
+import { encodeID, replaceDiacritics } from "../../plugins/utils";
 
 export default {
   components: {
     PageHeader,
     Sidebar,
-    Section,
+    Post,
     About
   },
   data: function () {
     return {
       mainContent: {},
-      sections: [],
+      posts: [],
       about: {},
       ogImage: ''
     }
@@ -76,26 +81,21 @@ export default {
     const aboutContentMarkup = require(`~/content/about.md`);
     this.about = aboutContentMarkup;
 
-    const ogImage = require(`~/assets/og-nehtova-modelaz.jpg`);
+    const ogImage = require(`~/assets${this.mainContent.attributes.main_image}`);
     this.ogImage = ogImage;
 
   },
   async asyncData () {
-    const sectionsAll = await require.context("~/content/blog/", true, /\.md$/)
-    const sections = sectionsAll.keys().map((key) => {
-      sectionsAll(key).attributes.id = encodeID(sectionsAll(key).attributes.titulek).toLowerCase();
-      return sectionsAll(key)
+    const postsAll = await require.context("~/content/blog/", true, /\.md$/)
+    const posts = postsAll.keys().map((key) => {
+      postsAll(key).attributes.url = key.split('.').slice(0, -1).join('.').split('/').slice(1).join('/');
+      postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
+      return postsAll(key)
     });
 
 
-    return { sections };
+    return { posts };
   }
 }
 
-function encodeID (s) {
-  if (s === '') return '_';
-  return s.replace(/[^a-zA-Z0-9.-]/g, function (match) {
-    return '_';
-  });
-}
 </script>

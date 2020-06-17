@@ -35,7 +35,11 @@
 
       <!-- Gallery -->
 
-      <Gallery :images="images" :title="mainContent.attributes.titulek" />
+      <Gallery
+        :images="images"
+        :title="mainContent.attributes.titulek"
+        :heading="`Galerie`"
+      />
     </main>
 
     <!-- Start Footer -->
@@ -55,6 +59,7 @@ import Slider from "../components/Slider";
 import Gallery from "../components/Gallery";
 import Section from "../components/Section";
 import About from "../components/About";
+import { encodeID, replaceDiacritics } from "../plugins/utils";
 
 export default {
   components: {
@@ -97,7 +102,7 @@ export default {
     const aboutContentMarkup = require(`~/content/about.md`);
     this.about = aboutContentMarkup;
 
-    const ogImage = require(`~/assets/og-nehtova-modelaz.jpg`);
+    const ogImage = require(`~/assets${this.mainContent.attributes.main_image}`);
     this.ogImage = ogImage;
 
   },
@@ -123,7 +128,7 @@ export default {
     const sectionsAll = await require.context("~/content/sections/", true, /\.md$/)
     const sections = sectionsAll.keys().map((key) => {
       // give back the value of each post context
-      sectionsAll(key).attributes.id = encodeID(sectionsAll(key).attributes.titulek).toLowerCase();
+      sectionsAll(key).attributes.id = encodeID(replaceDiacritics((sectionsAll(key).attributes.titulek).toLowerCase()));
       return sectionsAll(key)
     });
 
@@ -132,10 +137,6 @@ export default {
   }
 }
 
-function encodeID (s) {
-  if (s === '') return '_';
-  return s.replace(/[^a-zA-Z0-9.-]/g, function (match) {
-    return '_';
-  });
-}
+
 </script>
+

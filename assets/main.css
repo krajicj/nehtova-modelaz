@@ -2044,6 +2044,10 @@ main{
   .button {
     width: 100%;
   }
+
+  .h1-mobile{
+    font-size: 2.0rem;
+  }
   
 }
 
@@ -2062,4 +2066,30 @@ main{
   letter-spacing: 0.2em;
   font-family: Cinzel, sans-serif;
   font-size: 2vw;
+}
+
+.section-text{
+  text-align: justify;
+
+}
+
+.section-text a{
+  color: #c7770f;
+}
+
+.date-blog{
+  margin: 0.5rem 0;
+}
+
+a.post-show-more{
+  color: #c7770f;
+}
+
+.post-text{
+  padding: 3rem 0;
+}
+.post-img{
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 2rem;
 }

@@ -7,12 +7,8 @@
             <h3 class="">
               {{ section.attributes.titulek }}
             </h3>
-            <span v-if="hasDate"
-              ><i class="fa fa-calendar"></i> {{ dateFormat }}</span
-            >
-            <div class="section-text" v-html="section.attributes.text">
-              více
-            </div>
+
+            <div class="section-text" v-html="section.attributes.text"></div>
           </div>
         </div>
         <div class="box-image flex-item " :class="{ 'section-left': isOdd }">
@@ -40,20 +36,9 @@ export default {
     },
     isLast () {
       return this.index === (this.count - 1);
-    },
-    hasDate () {
-      return typeof (this.section.attributes.date) !== 'undefined';
-    },
-    dateFormat () {
-      if (!this.hasDate) {
-        return ''
-      }
-      const parseDate = new Date(this.section.attributes.date);
-      const day = (parseDate.getDate() < 10 ? '0' : '') + parseDate.getDate();
-      const month = (parseDate.getUTCMonth() < 9 ? '0' : '') + (parseDate.getUTCMonth() + 1);
-      return `${day}.${month}.${parseDate.getFullYear()}`;
-
     }
+
+
   }
 }
 </script>
