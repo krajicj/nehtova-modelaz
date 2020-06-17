@@ -19,9 +19,9 @@
     <nav class="ampstart-sidebar-nav ampstart-nav">
       <ul class="list-reset m0 p0 ampstart-label">
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#uvod">Úvod</a>
+          <a class="ampstart-nav-link" href="/#uvod">Úvod</a>
         </li>
-        <li
+        <!-- <li
           v-for="section in sections"
           :key="section.titulek"
           class="ampstart-nav-item "
@@ -29,16 +29,25 @@
           <a class="ampstart-nav-link" :href="`#${section.attributes.id}`">
             {{ section.attributes.titulek }}
           </a>
+        </li> -->
+        <li class="ampstart-nav-item ">
+          <a class="ampstart-nav-link" href="/#co-delam">{{
+            mainContent.attributes.sekce_nadpis
+          }}</a>
         </li>
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#kontakt">Kontakt</a>
+          <a class="ampstart-nav-link" href="/#kontakt">Kontakt</a>
         </li>
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="#galerie">Galerie</a>
+          <a class="ampstart-nav-link" href="/#galerie">Galerie</a>
+        </li>
+
+        <li class="ampstart-nav-item ">
+          <a class="ampstart-nav-link" href="/aktuality">Aktuality</a>
         </li>
       </ul>
     </nav>
-
+    <hr />
     <ul
       class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4"
     >
@@ -108,6 +117,6 @@
 
 <script>
 export default {
-  props: ['sections', 'about']
+  props: ['mainContent', 'about']
 }
 </script>

@@ -2056,3 +2056,10 @@ main{
   color: #c7770f;
   font-weight: bold;
 }
+
+.logo{
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: Cinzel, sans-serif;
+  font-size: 2vw;
+}

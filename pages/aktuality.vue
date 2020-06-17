@@ -2,24 +2,11 @@
   <div>
     <!-- Start Navbar -->
     <PageHeader :mainContent="mainContent" />
-
     <Sidebar :mainContent="mainContent" :about="about.attributes" />
 
-    <Slider :slides="slides" :mainContent="mainContent.attributes" />
-    <!-- End Navbar -->
-
     <main id="content" role="main">
-      <div class="web-section-top">
-        <div class="web-content">
-          <h2 id="uvod" class="section-heading">
-            {{ mainContent.attributes.obsah_nadpis }}
-          </h2>
-          <div v-html="mainContent.html" class="main-content"></div>
-        </div>
-      </div>
-
-      <h2 class="section-heading" id="co-delam">
-        {{ mainContent.attributes.sekce_nadpis }}
+      <h2 class="section-heading">
+        Aktuality
       </h2>
 
       <Section
@@ -34,8 +21,6 @@
       <About :about="about" />
 
       <!-- Gallery -->
-
-      <Gallery :images="images" :title="mainContent.attributes.titulek" />
     </main>
 
     <!-- Start Footer -->
@@ -51,8 +36,6 @@
 <script>
 import PageHeader from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import Slider from "../components/Slider";
-import Gallery from "../components/Gallery";
 import Section from "../components/Section";
 import About from "../components/About";
 
@@ -60,15 +43,11 @@ export default {
   components: {
     PageHeader,
     Sidebar,
-    Slider,
-    Gallery,
     Section,
     About
   },
   data: function () {
     return {
-      slides: [],
-      images: [],
       mainContent: {},
       sections: [],
       about: {},
@@ -102,33 +81,14 @@ export default {
 
   },
   async asyncData () {
-    //  const slides = [];
-    //const images = [];
-
-    /*
-        const imgs = await require.context('~/static/slider/', true, /\.jpg$/);
-        imgs.keys().forEach(key => (slides.push("slider/" + key)));
-    */
-    /*
-     const imgsGal = await require.context('~/static/gallery/', true, /\.jpg$/);
-     imgsGal.keys().forEach(key => {
-       images.push("gallery/" + key);
-     });
- */
-    const galleryMarkup = require(`~/content/gallery.md`);
-    const images = galleryMarkup.attributes.gallery;
-
-
-
-    const sectionsAll = await require.context("~/content/sections/", true, /\.md$/)
+    const sectionsAll = await require.context("~/content/blog/", true, /\.md$/)
     const sections = sectionsAll.keys().map((key) => {
-      // give back the value of each post context
       sectionsAll(key).attributes.id = encodeID(sectionsAll(key).attributes.titulek).toLowerCase();
       return sectionsAll(key)
     });
 
 
-    return { images, sections };
+    return { sections };
   }
 }
 
