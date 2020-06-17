@@ -1,11 +1,16 @@
 ---
-titulek: Nové webové stránky
-date: 2020-06-17T22:00:00Z
-text: K narozeninám jsem dostala nové webové stránky, kde najdete veškeré informace
-  o mé práci. Už nyní se teším až se s vámi podělím o fotografie a používané techniky...
-obrazek: "/images/dsc_3232.jpg"
-gallery: []
+titulek: Ode dneška už mi naleznete i na instagramu
+date: 2020-06-18T22:00:00Z
+text: Ode dneška už mi najdete i na instagramu pod účtem [@aknehtovamodelaz](https://www.instagram.com/aknehtovamodelaz/
+  "instagram"). Budu se zde snažit sdílet obrázky mé práce. Velmi mi potěší pokud
+  zveřejníte nehty ode mě a označíte mi.
+obrazek: "/images/img_5313.jpg"
+gallery:
+- "/images/001gel-lak2.jpg"
+- "/images/img_5291.jpg"
+- "/images/img_5255.jpg"
+- "/images/p_20180222_185456.jpg"
 title: instagram.md
 
 ---
-K narozeninám jsem dostala nové webové stránky, kde najdete veškeré informace o mé práci. Už nyní se teším až se s vámi podělím o fotografie a používané techniky. Dlouho jsem odolávala pořídit si vlastní stránky, ale až iniciativa mých dětí mi k nim přivedla. A tímto bych jim chtěla moc poděkovat.
+Ode dneška už mi najdete i na instagramu pod účtem [@aknehtovamodelaz](https://www.instagram.com/aknehtovamodelaz/ "instagram"). Budu se zde snažit sdílet obrázky mé práce. Velmi mi potěší pokud zveřejníte nehty ode mě a označíte mi. Věřím, že časem se na tomto účtu objeví spousta krásných fotografií a každý tak bude mít přehled a inspiraci jaké nehty příště zvolit.
