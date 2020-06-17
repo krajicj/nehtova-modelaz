@@ -7,6 +7,11 @@ sections:
 - type: heading
   label: Sekce
 - type: directory
+  path: content/blog
+  label: Blog
+  create: all
+  match: "**/*"
+- type: directory
   path: content/sections
   label: Sekce webu
   create: all
