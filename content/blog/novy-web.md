@@ -1,8 +1,8 @@
 ---
 titulek: Nové webové stránky
 date: 2020-06-17T22:00:00Z
-text: K narozeninám jsem dostala nové webové stránky, kde najdete veškeré informace
-  o mé práci. Už nyní se teším až se s vámi podělím o fotografie a používané techniky...
+text: "<p>K narozeninám jsem dostala nové webové stránky, kde najdete veškeré informace
+  o mé práci. Už nyní se teším až se s vámi podělím o fotografie a používané techniky.</p>"
 obrazek: "/images/dsc_3232.jpg"
 gallery: []
 
