@@ -29,5 +29,5 @@ fields:
   config: {}
   label: Galerie
 pages:
-- content/blog/instagram.md.md
+- content/blog/instagram.md
 - content/blog/novy-web.md
