@@ -28,3 +28,5 @@ fields:
   type: image_gallery
   config: {}
   label: Galerie
+pages:
+- content/blog/novy-web.md
