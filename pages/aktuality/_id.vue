@@ -106,7 +106,7 @@ export default {
       title: this.mainContent.attributes.titulek,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { name: 'description', content: `${this.mainContent.attributes.obsah}` },
+        { name: 'description', content: `${this.post.attributes.text.replace(/<\/?[^>]+(>|$)/g, "")}` },
         { name: 'og:title', content: `${this.mainContent.attributes.titulek}` },
         { name: 'og:description', content: this.post.attributes.titulek },
         { name: 'og:image', content: this.ogImage },
