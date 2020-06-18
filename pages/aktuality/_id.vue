@@ -140,7 +140,7 @@ export default {
     });
 
     const ogImage = require(`~/assets${post.attributes.obrazek}`);
-    return { post };
+    return { post, ogImage };
   }
 }
 
