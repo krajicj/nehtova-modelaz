@@ -71,7 +71,11 @@ export default {
         { name: 'google-site-verification', content: '-SFmZ9hcc33r5cnur1SNM-zBxmzWxGVLQuyZ61pGDEg' }
 
 
-      ]
+      ],
+      link: [{
+        rel: 'canonical',
+        href: 'https://www.nehtova-modelaz-plzen.cz/aktuality'
+      }]
     }
   },
   created () {

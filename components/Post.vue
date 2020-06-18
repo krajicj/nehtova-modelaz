@@ -16,11 +16,12 @@
               <i class="fa fa-calendar"></i> {{ dateFormat }}
             </div>
             <div class="section-text" v-html="post.attributes.text"></div>
-            <a
+            <nuxt-link
+              :to="{ path: post.attributes.url }"
               class="post-show-more"
               v-if="post.attributes.url"
-              :href="`${post.attributes.url}`"
-              >Více...</a
+              append
+              >Více...</nuxt-link
             >
           </div>
         </div>
