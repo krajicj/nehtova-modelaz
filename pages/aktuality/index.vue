@@ -61,7 +61,7 @@ export default {
   },
   head () {
     return {
-      title: this.mainContent.attributes.titulek,
+      title: 'Aktuality - ' + this.mainContent.attributes.nadpis + ' ' + this.mainContent.attributes.nadpis3,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         { name: 'description', content: `${this.mainContent.attributes.obsah}` },
