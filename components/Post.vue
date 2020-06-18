@@ -25,7 +25,10 @@
             >
           </div>
         </div>
-        <div class="box-image flex-item " :class="{ 'section-left': isOdd }">
+        <div
+          class="box-image flex-item "
+          :class="{ 'section-left': isOdd, 'section-right': !isOdd }"
+        >
           <amp-img
             class=""
             :srcset="require(`~/assets${post.attributes.obrazek}`).srcSet"

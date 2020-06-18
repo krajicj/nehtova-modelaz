@@ -1971,7 +1971,15 @@ main{
 }
 
 .box-image{
-  margin: 2rem;  
+  /* margin: 2rem;   */
+}
+
+.section-left.box-image{
+  margin: 2rem 2rem 2rem 0;
+}
+
+.section-right.box-image{
+  margin: 2rem 0 2rem 2rem;
 }
 
 .section-right{
@@ -1980,6 +1988,8 @@ main{
 .section-right{
   order:1; 
 }
+
+
 
 .button a {
   color: #FFFFFF;
@@ -2047,6 +2057,14 @@ main{
 
   .h1-mobile{
     font-size: 2.0rem;
+  }
+  
+  .section-left.box-image{
+    margin: auto;
+  }
+  
+  .section-right.box-image{
+    margin: auto;
   }
   
 }
