@@ -5,9 +5,9 @@
         <div class="box-text flex-item" :class="{ 'section-right': isOdd }">
           <div class="">
             <h2 v-if="post.attributes.url" class="h3">
-              <a :href="`${post.attributes.url}`">
+              <nuxt-link :to="{ path: post.attributes.url }" append>
                 {{ post.attributes.titulek }}
-              </a>
+              </nuxt-link>
             </h2>
             <h2 v-else class="h3">
               {{ post.attributes.titulek }}
