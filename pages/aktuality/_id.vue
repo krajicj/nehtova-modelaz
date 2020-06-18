@@ -103,7 +103,7 @@ export default {
   },
   head () {
     return {
-      title: this.mainContent.attributes.titulek,
+      title: this.post.attributes.titulek,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         { name: 'description', content: `${this.post.attributes.text.replace(/<\/?[^>]+(>|$)/g, "")}` },
