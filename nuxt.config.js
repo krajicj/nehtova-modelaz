@@ -53,7 +53,7 @@ export default async () => {
       }]
     ],
     responsiveLoader: {
-      // name: 'img/hello-world-[width].[ext]',
+      name: '[name]-[width].[ext]',
       // sizes: [200, 500],
       min: 640, // minimum image width generated
       max: 1300, // maximum image width generated
