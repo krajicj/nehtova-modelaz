@@ -89,7 +89,8 @@ export default {
         { name: 'og:title', content: `${this.mainContent.attributes.titulek}` },
         { name: 'og:description', content: `${this.mainContent.attributes.obsah}` },
         { name: 'og:image', content: this.ogImage },
-        { name: 'google-site-verification', content: '-SFmZ9hcc33r5cnur1SNM-zBxmzWxGVLQuyZ61pGDEg' }
+        { name: 'google-site-verification', content: '-SFmZ9hcc33r5cnur1SNM-zBxmzWxGVLQuyZ61pGDEg' },
+        { name: 'seznam-wmt', content: 'lN9Uuhg9TreFa5LH7qaoi1TErZJdSZfD' }
 
 
       ],
