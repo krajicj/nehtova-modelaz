@@ -1312,8 +1312,8 @@ html {
   .ampstart-footer {
     background-color: inherit;
     color: currentColor;
-    /* padding-top: 5rem; */
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .ampstart-footer .ampstart-icon {
     fill: currentColor;
@@ -2099,6 +2099,7 @@ main{
   .web-section-right{
     background-color: #f6f6f6;   
     margin: 3.5rem 0 0 0;
+    padding-bottom: 0.5rem;
   }
 
   .post-min-section{
