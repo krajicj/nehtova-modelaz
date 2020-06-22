@@ -6,10 +6,10 @@ text: <p>Ode dneška už mě najdete i na <strong>instagramu </strong>pod účte
   obrázky mé práce. Velmi mě potěší, pokud zveřejníte nehty ode mě a označíte mě.</p>
 obrazek: "/images/uv-gel-nehtova-modelaz-plzen4.jpg"
 gallery:
-- "/images/001gel-lak2.jpg"
-- "/images/img_5291.jpg"
-- "/images/img_5255.jpg"
-- "/images/p_20180222_185456.jpg"
+- "/images/shellac-gel-lak-nehtova-modelaz-plzen4.jpg"
+- "/images/uv-gel-nehtova-modelaz-plzen.jpg"
+- "/images/uv-gel-nehtova-modelaz-plzen6.jpg"
+- "/images/shellac-gel-lak-nehtova-modelaz-plzen.jpg"
 title: instagram.md
 
 ---
