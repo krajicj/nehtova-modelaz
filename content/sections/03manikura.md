@@ -1,5 +1,5 @@
 ---
-titulek: Manikůra
+titulek: Manikúra
 text: "<p><strong>Manikúra</strong> je kosmetická procedura, během které dochází ke
   kultivaci rukou s hlavním důrazem na <strong>nehty</strong> a jejich okolí. Hlavním
   předmětem je <strong>čištění nehtů</strong>, jejich <strong>zarovnání</strong> a
