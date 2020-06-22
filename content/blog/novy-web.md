@@ -1,10 +1,10 @@
 ---
 titulek: Nové webové stránky
-date: 2020-06-17T22:00:00Z
+date: 2020-06-17T22:00:00.000+00:00
 text: "<p>K narozeninám jsem dostala nové webové stránky, kde najdete veškeré informace
   o mé práci. Už nyní se těším až se s vámi podělím o fotografie a techniky, které
   při práci používám. </p>"
-obrazek: "/images/dsc_3232.jpg"
+obrazek: "/images/alena-krajicova-nehtova-modelaz.jpg"
 gallery: []
 
 ---
