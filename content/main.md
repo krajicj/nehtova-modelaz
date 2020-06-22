@@ -6,7 +6,7 @@ obsah: Nehtová modeláž Plzeň. Kvalitní a profesionální péče. Chcete si 
 nadpis: nehtová modeláž
 nadpis2: Alena Krajícová
 nadpis3: Plzeň
-main_image: "/images/dsc_3232.jpg"
+main_image: "/images/alena-krajicova-nehtova-modelaz.jpg"
 obsah_nadpis: O mně
 sekce_nadpis: 'Používám '
 
