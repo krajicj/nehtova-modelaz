@@ -1312,7 +1312,7 @@ html {
   .ampstart-footer {
     background-color: inherit;
     color: currentColor;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
     padding-bottom: 5rem;
   }
   .ampstart-footer .ampstart-icon {
@@ -1926,6 +1926,8 @@ main{
   margin-top: -3.5rem;
 }
 
+
+
 @media only screen and (min-width: 769px){
 .web-section-top{
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -1935,8 +1937,8 @@ main{
 }
 
 .web-section-right{
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
 
   padding-top: 1.5rem; 
   padding-bottom: 4.5rem; 
@@ -2036,7 +2038,22 @@ main{
   right: 0;
 } */
 
+.only-mobile{
+  display: none;
+}
 
+.only-desktop{
+  display: flex;
+}
+
+.post-min-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-min{
+  margin: 0 1.5rem;
+}
 
 @media screen and (max-width:768px){
   .web-section-type{
@@ -2064,6 +2081,33 @@ main{
   
   .section-right.box-image{
     margin: auto;
+  }
+
+  .only-mobile{
+    display: block;
+  }
+
+  .only-desktop{
+    display: none;
+  }
+
+  .web-section-top{ 
+    background-color: #f6f6f6;
+    padding-bottom: 2rem;
+  }
+  
+  .web-section-right{
+    background-color: #f6f6f6;   
+    margin: 3.5rem 0 0 0;
+  }
+
+  .post-min-section{
+    display: block;
+    justify-content: unset;
+  }
+
+  .post-min{
+    margin: 0 0 2rem 0;
   }
   
 }
@@ -2115,4 +2159,57 @@ a.post-show-more{
   width: 1em;
   height: 1em;
   vertical-align: text-top;
+}
+
+.post-min{  
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.post-min-text{
+  padding-top: 1rem;
+}
+.post-min-text-wrapper{
+  padding: 1.5rem;
+  
+}
+
+.content-gallery{
+  padding-bottom: 1.5rem;
+}
+
+
+.post-min-date{
+  margin-top: 1rem;
+}
+
+.post-min-section{
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.news-strip {
+  min-height: 130px;
+}
+
+.news-strip amp-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+  top: 0px;
+  border-radius: 10px;
+}
+
+.news-strip h3 {
+  padding-right: 120px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 900;
+  display: block;
+  color: #000000;
+}
+
+.post-min-mobile-text{
+  flex-grow: 2;
 }

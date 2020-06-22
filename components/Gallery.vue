@@ -1,5 +1,5 @@
 <template>
-  <div v-if="images.length" class="web-content">
+  <div v-if="images.length" class="web-content content-gallery">
     <h2 v-if="heading" id="galerie" class="section-heading">{{ heading }}</h2>
 
     <amp-carousel

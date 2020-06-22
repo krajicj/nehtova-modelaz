@@ -40,6 +40,8 @@
         :title="mainContent.attributes.titulek"
         :heading="`Galerie`"
       />
+
+      <PostMin :posts="posts" />
     </main>
 
     <!-- Start Footer -->
@@ -59,6 +61,7 @@ import Slider from "../components/Slider";
 import Gallery from "../components/Gallery";
 import Section from "../components/Section";
 import About from "../components/About";
+import PostMin from "../components/PostMin";
 import { encodeID, replaceDiacritics } from "../plugins/utils";
 
 export default {
@@ -68,7 +71,8 @@ export default {
     Slider,
     Gallery,
     Section,
-    About
+    About,
+    PostMin
   },
   data: function () {
     return {
@@ -125,15 +129,15 @@ export default {
       return sectionsAll(key)
     });
 
-    const limit = 3;
+    const limit = 2;
 
     const postsAll = await require.context("~/content/blog/", true, /\.md$/)
-    const posts = postsAll.keys().map((key) => {
+    const postsBig = postsAll.keys().map((key) => {
       postsAll(key).attributes.url = key.split('.').slice(0, -1).join('.').split('/').slice(1).join('/');
       postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
       return postsAll(key)
     });
-    posts.slice(0, limit);
+    const posts = postsBig.slice(0, limit);
 
 
     return { images, sections, posts };
