@@ -14,7 +14,8 @@
 
           <p class="mb0">
             <a :href="`tel:${about.attributes.telefon}`">
-              <i class="fa fa-phone"> </i>
+              <!-- <i class="fa fa-phone"> </i> -->
+              <PhoneIcon />
               &nbsp;
               {{ about.attributes.telefon }}
             </a>
@@ -22,9 +23,10 @@
             <br />
 
             <a :href="`mailto:${about.attributes.email}`">
-              <i class="fa fa-envelope">
-                &nbsp;
-              </i>
+              <!-- <i class="fa fa-envelope"> -->
+              <MailIcon />
+              &nbsp;
+
               {{ about.attributes.email }}
             </a>
 
@@ -34,8 +36,10 @@
             href="https://goo.gl/maps/YCeSLStiYoEnviuN8"
             target="_blank"
             class="button"
-            ><span>Mapa</span></a
           >
+            <PinIcon />
+            <span>Mapa</span>
+          </a>
         </div>
         <div class="col col-6 sm-col-12 ">
           <br />
@@ -47,7 +51,16 @@
 </template>
 
 <script>
+import MailIcon from "./icons/mailIcon";
+import PhoneIcon from "./icons/phoneIcon";
+import PinIcon from "./icons/pinIcon";
+
 export default {
-  props: ["about"]
+  props: ["about"],
+  components: {
+    MailIcon,
+    PhoneIcon,
+    PinIcon
+  }
 };
 </script>

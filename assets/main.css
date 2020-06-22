@@ -52,6 +52,7 @@ html {
   a:hover {
     outline-width: 0;
     color: #c7770f;
+    fill: #c7770f;
   }
 
   a:active{
@@ -1970,9 +1971,6 @@ main{
   margin-bottom: 0;
 }
 
-.box-image{
-  /* margin: 2rem;   */
-}
 
 .section-left.box-image{
   margin: 2rem 2rem 2rem 0;
@@ -2016,8 +2014,9 @@ main{
   position: relative;
   transition: 0.5s;
   color: #FFFFFF;
+  fill: #FFFFFF;
 }
-
+/* 
 .button span:after {
   font-family: FontAwesome;
   content: '\f041';
@@ -2035,7 +2034,7 @@ main{
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
+} */
 
 
 
@@ -2110,4 +2109,10 @@ a.post-show-more{
   max-width: 600px;
   margin: auto;
   margin-bottom: 2rem;
+}
+
+.svg-icon{
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
 }

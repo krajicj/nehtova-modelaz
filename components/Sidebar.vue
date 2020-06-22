@@ -31,7 +31,7 @@
           </a>
         </li> -->
         <li class="ampstart-nav-item ">
-          <a class="ampstart-nav-link" href="/#co-delam">{{
+          <a class="ampstart-nav-link" href="/#co-nabizim">{{
             mainContent.attributes.sekce_nadpis
           }}</a>
         </li>

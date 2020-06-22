@@ -13,7 +13,8 @@
               {{ post.attributes.titulek }}
             </h2>
             <div v-if="hasDate" class="date-blog">
-              <i class="fa fa-calendar"></i> {{ dateFormat }}
+              <!-- <i class="fa fa-calendar"></i>  -->
+              <CalendarIcon />&nbsp;{{ dateFormat }}
             </div>
             <div class="section-text" v-html="post.attributes.text"></div>
             <nuxt-link
@@ -45,8 +46,13 @@
 </template>
 
 <script>
+import CalendarIcon from "./icons/calendarIcon";
+
 export default {
   props: ['post', 'id', 'index', 'count'],
+  components: {
+    CalendarIcon
+  },
   computed: {
     isOdd () {
       return this.index % 2;

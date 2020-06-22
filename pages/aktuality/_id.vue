@@ -32,7 +32,7 @@
               </div>
               <div class="box-text flex-item section-left">
                 <div v-if="hasDate" class="date-blog">
-                  <i class="fa fa-calendar"></i> {{ dateFormat }}
+                  <CalendarIcon /> &nbsp; {{ dateFormat }}
                 </div>
                 <div v-html="post.html" class="main-content"></div>
               </div>
@@ -68,13 +68,15 @@ import Sidebar from "../../components/Sidebar";
 import Gallery from "../../components/Gallery";
 import About from "../../components/About";
 import { encodeID, replaceDiacritics } from "../../plugins/utils";
+import CalendarIcon from "../../components/icons/calendarIcon";
 
 export default {
   components: {
     PageHeader,
     Sidebar,
     Gallery,
-    About
+    About,
+    CalendarIcon
   },
   data: function () {
     return {

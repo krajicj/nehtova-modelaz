@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <h2 class="section-heading" id="co-delam">
+      <h2 class="section-heading" id="co-nabizim">
         {{ mainContent.attributes.sekce_nadpis }}
       </h2>
 
@@ -77,7 +77,8 @@ export default {
       mainContent: {},
       sections: [],
       about: {},
-      ogImage: ''
+      ogImage: '',
+      posts: []
     }
   },
   head () {
@@ -124,8 +125,18 @@ export default {
       return sectionsAll(key)
     });
 
+    const limit = 3;
 
-    return { images, sections };
+    const postsAll = await require.context("~/content/blog/", true, /\.md$/)
+    const posts = postsAll.keys().map((key) => {
+      postsAll(key).attributes.url = key.split('.').slice(0, -1).join('.').split('/').slice(1).join('/');
+      postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
+      return postsAll(key)
+    });
+    posts.slice(0, limit);
+
+
+    return { images, sections, posts };
   }
 }
 
