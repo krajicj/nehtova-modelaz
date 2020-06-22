@@ -1,5 +1,5 @@
 ---
-titulek: Gel lak
+titulek: Gel lak (Shellac)
 text: "<p><strong>Gel laky</strong> jsou <strong>nejpřirozenější</strong> a <strong>nejšetrnější</strong>
   způsob nehtové modeláže. Jedinečné jsou především díky své jednoduché aplikaci na
   <strong>přírodní nehty</strong>. Všechny gel laky se aplikují stejně jednoduše jako
