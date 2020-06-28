@@ -6,6 +6,6 @@ text: "<p><strong>Manikúra</strong> je kosmetická procedura, během které doc
   <strong>odstranění odumřelé kůže</strong> z jejich okolí a rukou. Manikúra se používá
   jak z čistě kosmetických důvodů, tak i z lékařských v případě, že je kolem nehtů
   nějaká virová, či plísňová infekce.</p>"
-obrazek: "/images/shellac-gel-lak-nehtova-modelaz-plzen2.jpg"
+obrazek: "/images/img_5427.jpg"
 
 ---
