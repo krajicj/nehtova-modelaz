@@ -65,6 +65,8 @@
             </nuxt-link>
           </div>
         </div> -->
+
+        <a href="/aktuality" class="button btn-center">Všechny aktuality</a>
       </div>
     </div>
   </div>
