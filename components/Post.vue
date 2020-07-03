@@ -1,45 +1,43 @@
 <template>
   <div :id="id" class="web-section-item" :class="{ 'last-item': isLast }">
-    <div class="web-content">
-      <div class="web-section-type">
-        <div class="box-text flex-item" :class="{ 'section-right': isOdd }">
-          <div class="">
-            <h2 v-if="post.attributes.url" class="h3">
-              <nuxt-link :to="{ path: post.attributes.url }" append>
-                {{ post.attributes.titulek }}
-              </nuxt-link>
-            </h2>
-            <h2 v-else class="h3">
+    <div class="web-section-type">
+      <div class="box-text flex-item" :class="{ 'section-right': isOdd }">
+        <div class="">
+          <h2 v-if="post.attributes.url" class="h3">
+            <nuxt-link :to="{ path: post.attributes.url }" append>
               {{ post.attributes.titulek }}
-            </h2>
-            <div v-if="hasDate" class="date-blog">
-              <!-- <i class="fa fa-calendar"></i>  -->
-              <CalendarIcon />&nbsp;{{ dateFormat }}
-            </div>
-            <div class="section-text" v-html="post.attributes.text"></div>
-            <nuxt-link
-              :to="{ path: post.attributes.url }"
-              class="post-show-more"
-              v-if="post.attributes.url"
-              append
-              >Více...</nuxt-link
-            >
+            </nuxt-link>
+          </h2>
+          <h2 v-else class="h3">
+            {{ post.attributes.titulek }}
+          </h2>
+          <div v-if="hasDate" class="date-blog">
+            <!-- <i class="fa fa-calendar"></i>  -->
+            <CalendarIcon />&nbsp;{{ dateFormat }}
           </div>
+          <div class="section-text" v-html="post.attributes.text"></div>
+          <nuxt-link
+            :to="{ path: post.attributes.url }"
+            class="post-show-more"
+            v-if="post.attributes.url"
+            append
+            >Více...</nuxt-link
+          >
         </div>
-        <div
-          class="box-image flex-item "
-          :class="{ 'section-left': isOdd, 'section-right': !isOdd }"
-        >
-          <amp-img
-            class=""
-            :srcset="require(`~/assets${post.attributes.obrazek}`).srcSet"
-            width="600"
-            height="400"
-            layout="responsive"
-            sizes="(min-width: 768px) 400px, 80vw"
-            :alt="post.attributes.titulek"
-          ></amp-img>
-        </div>
+      </div>
+      <div
+        class="box-image flex-item "
+        :class="{ 'section-left': isOdd, 'section-right': !isOdd }"
+      >
+        <amp-img
+          class=""
+          :srcset="require(`~/assets${post.attributes.obrazek}`).srcSet"
+          width="600"
+          height="400"
+          layout="responsive"
+          sizes="(min-width: 768px) 400px, 80vw"
+          :alt="post.attributes.titulek"
+        ></amp-img>
       </div>
     </div>
   </div>

@@ -2004,6 +2004,7 @@ a.button {
   text-align: center;  
   padding: 0.5rem;
   width: 50%;
+  max-width: 450px;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 0.5rem;
@@ -2012,7 +2013,7 @@ a.button {
 }
 
 .btn-center{
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .button span {
