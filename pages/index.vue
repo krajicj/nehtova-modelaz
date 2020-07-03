@@ -129,7 +129,7 @@ export default {
       return sectionsAll(key)
     });
 
-    const limit = 2;
+    const limit = 3;
 
     const postsAll = await require.context("~/content/blog/", true, /\.md$/)
     const postsBig = postsAll.keys().map((key) => {
@@ -137,7 +137,10 @@ export default {
       postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
       return postsAll(key)
     });
-    const posts = postsBig.slice(0, limit);
+    const posts = postsBig.sort(function (a, b) {
+      var dateA = new Date(a.attributes.date), dateB = new Date(b.attributes.date);
+      return dateB - dateA;
+    }).slice(0, limit);
 
 
     return { images, sections, posts };

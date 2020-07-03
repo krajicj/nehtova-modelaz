@@ -2036,11 +2036,12 @@ a.button {
 
 .post-min-section{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between;*/
 }
 
 .post-min{
   margin: 0 1.5rem;
+  max-width: 400px;
 }
 
 @media screen and (max-width:768px){
@@ -2096,7 +2097,7 @@ a.button {
   }
 
   .post-min{
-    margin: 0 0 2rem 0;
+    margin: 0 auto 2rem auto;
   }
   
 }

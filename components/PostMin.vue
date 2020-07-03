@@ -5,7 +5,7 @@
         <h2 id="aktuality" class="section-heading">
           Poslední aktuality
         </h2>
-        <div class="flex justify-between post-min-section">
+        <div class="flex post-min-section">
           <div v-for="post in posts" :key="post.id" class="post-min">
             <article class="">
               <div class="img-wrapper">
@@ -18,8 +18,8 @@
                     :srcset="
                       require(`~/assets${post.attributes.obrazek}`).srcSet
                     "
-                    width="300"
-                    height="200"
+                    width="600"
+                    height="400"
                     layout="responsive"
                     :alt="post.attributes.titulek"
                   ></amp-img>

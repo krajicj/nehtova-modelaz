@@ -97,6 +97,9 @@ export default {
       postsAll(key).attributes.url = key.split('.').slice(0, -1).join('.').split('/').slice(1).join('/');
       postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
       return postsAll(key)
+    }).sort(function (a, b) {
+      var dateA = new Date(a.attributes.date), dateB = new Date(b.attributes.date);
+      return dateB - dateA;
     });
 
     return { posts };
