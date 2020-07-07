@@ -1,4 +1,24 @@
 ---
 label: TableList
 hide_body: true
-fields: []
+fields:
+- name: sluzba
+  type: field_group
+  config: {}
+  fields:
+  - name: polozka
+    type: text
+    config:
+      required: false
+    label: Položka
+  - name: cena
+    type: number
+    label: Cena
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Služba
