@@ -30,7 +30,6 @@ sections:
 - type: document
   path: content/cenik.md
   label: Ceník
-  match: "**/*"
 upload_dir: assets/images
 public_path: "/images"
 front_matter_path: ''
