@@ -30,3 +30,5 @@ fields:
     max: 
     labelField: 
   label: Služba
+pages:
+- content/cenik.md
