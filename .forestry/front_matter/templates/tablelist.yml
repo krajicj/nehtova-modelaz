@@ -5,6 +5,11 @@ fields:
 - name: sluzba
   type: field_group_list
   fields:
+  - name: nazev
+    type: text
+    config:
+      required: false
+    label: Název
   - name: popis
     type: text
     config:
