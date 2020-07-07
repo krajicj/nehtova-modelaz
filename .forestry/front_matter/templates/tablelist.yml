@@ -3,14 +3,13 @@ label: TableList
 hide_body: true
 fields:
 - name: sluzba
-  type: field_group
-  config: {}
+  type: field_group_list
   fields:
-  - name: polozka
+  - name: popis
     type: text
     config:
       required: false
-    label: Položka
+    label: Popis
   - name: cena
     type: number
     label: Cena
@@ -21,4 +20,8 @@ fields:
       min: 
       max: 
       step: 
+  config:
+    min: 
+    max: 
+    labelField: 
   label: Služba
