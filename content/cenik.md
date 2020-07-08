@@ -28,6 +28,9 @@ sluzba:
 - nazev: Nový nehet při doplnění
   popis: ''
   cena: 30
+- nazev: Nový nehet mimo doplnění
+  popis: ''
+  cena: 60
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
   cena: 300
