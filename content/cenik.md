@@ -40,6 +40,9 @@ sluzba:
   cena: 300
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
-  cena: 300
+  cena: 250
+- nazev: ''
+  popis: ''
+  cena: 
 
 ---
