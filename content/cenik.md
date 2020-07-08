@@ -19,6 +19,9 @@ sluzba:
 - nazev: Doplnění modeláže nehtů pro studenty
   popis: ''
   cena: 320
+- nazev: Gel lak/Shellac
+  popis: Aplikace barvy na přírodní nehty.
+  cena: 270
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
   cena: 300
