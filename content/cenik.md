@@ -22,6 +22,12 @@ sluzba:
 - nazev: Gel lak/Shellac
   popis: Aplikace barvy na přírodní nehty.
   cena: 270
+- nazev: Přebroušení modeláže + nová barva
+  popis: Přebroušení odrostlých nehtů (cca 14 dní) s novou barvou.
+  cena: 270
+- nazev: Nový nehet při doplnění
+  popis: ''
+  cena: 30
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
   cena: 300
