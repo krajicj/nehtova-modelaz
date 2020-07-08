@@ -13,6 +13,9 @@ sluzba:
 - nazev: Doplnění modeláže bez prodloužení
   popis: ''
   cena: 420
+- nazev: Nová modeláž nehtů pro studenty
+  popis: Sleva platí po předložení platné studentské průkazky.
+  cena: 370
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
   cena: 300
