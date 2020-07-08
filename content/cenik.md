@@ -45,5 +45,9 @@ sluzba:
   popis: Parafínový zábal na ruce je blahodárná procedura, která zlepšuje prokrvení,
     vypíná a zjemňuje pokožku a také vyživí a zpevní vaše nehty.
   cena: 250
+- nazev: Masáž rukou
+  popis: 'Masáž rukou přináší úlevu po celodenní námaze a také slouží jako prevence
+    syndromu karpálních tunelů. '
+  cena: 220
 
 ---
