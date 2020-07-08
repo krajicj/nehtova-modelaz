@@ -35,6 +35,9 @@ sluzba:
   popis: Kamínky Swarovski, razítka, vodolepky, leštící pigment. Cena se odvíjí podle
     náročnosti zdobení.
   cena: 5
+- nazev: Odstranění gelové modeláže + výživa
+  popis: ''
+  cena: 300
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
   cena: 300
