@@ -49,5 +49,8 @@ sluzba:
   popis: 'Masáž rukou přináší úlevu po celodenní námaze a také slouží jako prevence
     syndromu karpálních tunelů. '
   cena: 220
+- nazev: Kompletní kúra pro ruce
+  popis: Kombinace masáže rukou a parafínového zábalu.
+  cena: 400
 
 ---
