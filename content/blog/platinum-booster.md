@@ -1,9 +1,9 @@
 ---
 titulek: Nové barvy od Platinum Nails Technology
-date: 2020-07-08T22:00:00Z
+date: 2020-07-08T22:00:00.000+00:00
 text: "<p>Nedávno jsem objevila novinku od Platinum Nails Technology v podobě Gel
   laku z řady BOOSTER, která je naprosto perfektní.</p>"
-obrazek: "/images/img_3498.jpg"
+obrazek: "/images/platinum-booster-nehtova-modelaz-plzen.jpg"
 gallery: []
 
 ---
