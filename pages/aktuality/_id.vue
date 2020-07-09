@@ -41,6 +41,10 @@
         </div>
       </div>
 
+      <div class="web-content">
+        <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
+      </div>
+
       <!-- Gallery -->
 
       <Gallery

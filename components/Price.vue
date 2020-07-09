@@ -19,9 +19,8 @@
           <div class="price-card-footer">250 Kč</div>
         </div>
       </div>
+      <a href="/cenik" class="button btn-center">Kompletní ceník</a>
     </div>
-
-    <a href="/cenik" class="button btn-center">Kompletní ceník</a>
   </div>
 </template>
 
