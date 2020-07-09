@@ -2203,3 +2203,46 @@ a.post-show-more{
 .post-min-mobile-text{
   flex-grow: 2;
 }
+
+/* price cards*/
+
+.price-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+}
+
+.price-card{
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(199, 119, 15, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 1rem;
+  margin: 2rem;
+  -webkit-box-shadow: 0px 10px 35px -13px rgba(199,119,15,1);
+  -moz-box-shadow: 0px 10px 35px -13px rgba(199,119,15,1);
+  box-shadow: 0px 10px 35px -13px rgba(199,119,15,1);
+}
+
+.price-card-header{
+  text-align: center;  
+}
+
+
+.price-card-footer{
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+@media screen and (max-width:576px){
+  .price-card{
+    margin: 0 0 3rem 0;    
+  }
+
+}

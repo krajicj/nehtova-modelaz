@@ -42,6 +42,8 @@
       />
 
       <PostMin :posts="posts" />
+
+      <Price :prices="prices" />
     </main>
 
     <!-- Start Footer -->
@@ -62,6 +64,7 @@ import Gallery from "../components/Gallery";
 import Section from "../components/Section";
 import About from "../components/About";
 import PostMin from "../components/PostMin";
+import Price from "../components/Price";
 import { encodeID, replaceDiacritics } from "../plugins/utils";
 
 export default {
@@ -72,7 +75,8 @@ export default {
     Gallery,
     Section,
     About,
-    PostMin
+    PostMin,
+    Price
   },
   data: function () {
     return {
@@ -82,7 +86,8 @@ export default {
       sections: [],
       about: {},
       ogImage: '',
-      posts: []
+      posts: [],
+      prices: []
     }
   },
   head () {
@@ -143,7 +148,10 @@ export default {
     }).slice(0, limit);
 
 
-    return { images, sections, posts };
+    const priceMarkup = require(`~/content/cenik.md`);
+    const prices = priceMarkup.attributes.sluzba;
+
+    return { images, sections, posts, prices };
   }
 }
 
