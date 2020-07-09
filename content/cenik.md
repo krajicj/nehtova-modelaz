@@ -1,8 +1,7 @@
 ---
 sluzba:
 - nazev: Nová modeláž nehtů
-  popis: Prodloužení přírodního nehtu zpevňujícím materiálem. Pokud je máte krátké,
-    slabé či okousané nebo chcete mít své ruce stále upravené.
+  popis: 'Prodloužení přírodního nehtu zpevňujícím materiálem. '
   cena: 670
 - nazev: Doplnění modeláže
   popis: Doplnění odrostlých gelových nehtů vytvořených u mě.
