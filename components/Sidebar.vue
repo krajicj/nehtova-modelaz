@@ -45,6 +45,9 @@
         <li class="ampstart-nav-item ">
           <a class="ampstart-nav-link" href="/aktuality">Aktuality</a>
         </li>
+        <li class="ampstart-nav-item ">
+          <a class="ampstart-nav-link" href="/cenik">Ceník</a>
+        </li>
       </ul>
     </nav>
     <hr />

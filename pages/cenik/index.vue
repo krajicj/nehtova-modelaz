@@ -12,6 +12,21 @@
           </h1>
         </div>
       </div>
+
+      <div class="web-content">
+        <div class="pricing-table">
+          <table class="table-responsive">
+            <tr v-for="price in prices" :key="price.nazev">
+              <td>
+                <strong>{{ price.nazev }}</strong>
+                <br />
+                <small> {{ price.popis }}</small>
+              </td>
+              <td class="right-align">{{ price.cena }}&nbsp;Kč</td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <div class="web-content">
         <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
       </div>
@@ -56,7 +71,7 @@ export default {
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         { name: 'description', content: `${this.mainContent.attributes.obsah}` },
-        { name: 'og:title', content: `${this.mainContent.attributes.titulek}` },
+        { name: 'og:title', content: `Ceník - ${this.mainContent.attributes.titulek}` },
         { name: 'og:description', content: `${this.mainContent.attributes.obsah}` },
         { name: 'og:image', content: this.ogImage },
         { name: 'google-site-verification', content: '-SFmZ9hcc33r5cnur1SNM-zBxmzWxGVLQuyZ61pGDEg' }
