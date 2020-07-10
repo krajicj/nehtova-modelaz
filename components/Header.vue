@@ -15,13 +15,13 @@
       </div>
       <div class="col col-right logo">
         <h2>
-          <a href=".">
+          <nuxt-link to="/">
             {{ mainContent.attributes.nadpis2 }}<br />
             <small
               >{{ mainContent.attributes.nadpis }}
               {{ mainContent.attributes.nadpis3 }}</small
             >
-          </a>
+          </nuxt-link>
         </h2>
       </div>
     </div>
