@@ -3,7 +3,7 @@
     id="top"
     class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 "
   >
-    <div class="row">
+    <div class="row row-header">
       <div
         role="button"
         aria-label="open sidebar"
@@ -13,9 +13,17 @@
       >
         ☰
       </div>
-      <!-- <div class="ampstart-navbar-trigger col col-right logo">
-        {{ mainContent.attributes.nadpis }}
-      </div> -->
+      <div class="col col-right logo">
+        <h2>
+          <a href=".">
+            {{ mainContent.attributes.nadpis2 }}<br />
+            <small
+              >{{ mainContent.attributes.nadpis }}
+              {{ mainContent.attributes.nadpis3 }}</small
+            >
+          </a>
+        </h2>
+      </div>
     </div>
   </header>
 </template>
