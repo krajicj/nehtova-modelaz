@@ -5,7 +5,6 @@ gallery:
 - "/images/uv-gel-nehtova-modelaz-plzen4.jpg"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen2.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen12.JPG"
-- "/images/uv-gel-nehtova-modelaz-plzen13.JPG"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen4.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen11.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen7.jpg"
