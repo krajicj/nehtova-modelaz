@@ -60,6 +60,9 @@ export default async () => {
       steps: 5, // five sizes per image will be generated
       placeholder: false, // no placeholder will be generated
       quality: 80, // images are compressed with medium quality
+      options: {
+        adapter: require('responsive-loader/sharp')
+      }
     },
     hooks: {
       // This hook is called before generatic static html files for SPA mode
