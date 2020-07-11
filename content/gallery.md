@@ -1,10 +1,11 @@
 ---
 gallery:
+- "/images/uv-gel-nehtova-modelaz-plzen13.jpg"
+- "/images/uv-gel-nehtova-modelaz-plzen12.jpg"
 - "/images/platinum-nails-technology-nehtova-modelaz-plzen.jpg"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen3.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen4.jpg"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen2.jpg"
-- "/images/uv-gel-nehtova-modelaz-plzen12.JPG"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen4.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen11.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen7.jpg"
