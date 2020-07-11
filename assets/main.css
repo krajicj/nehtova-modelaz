@@ -1088,7 +1088,7 @@ html {
     font-family: Roboto, sans-serif;
     min-width: 315px;
     overflow-x: hidden;
-    font-smooth: always;
+    /* font-smooth: always; */
     -webkit-font-smoothing: antialiased;
   }
   main {
