@@ -1,5 +1,9 @@
 <template>
-  <div :id="id" class="web-section-item" :class="{ 'last-item': isLast }">
+  <div
+    :id="id"
+    class="web-section-item news-card"
+    :class="{ 'last-item': isLast }"
+  >
     <div class="web-section-type">
       <div class="box-text flex-item" :class="{ 'section-right': isOdd }">
         <div class="">
@@ -35,7 +39,7 @@
           width="600"
           height="400"
           layout="responsive"
-          sizes="(min-width: 768px) 400px, 80vw"
+          sizes="(min-width: 768px) 400px, 70vw"
           :alt="post.attributes.titulek"
         ></amp-img>
       </div>

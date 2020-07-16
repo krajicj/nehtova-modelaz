@@ -1964,10 +1964,13 @@ main{
   flex-flow: row;
   /*margin-top: 3.5rem;*/
 }
-.web-section-item{
+.web-section-item{  
   padding-top: 3.5rem;
   margin-bottom: -1.5rem;
+    
 }
+
+
 
 .last-item{
   margin-bottom: 0;
@@ -2286,4 +2289,15 @@ a.post-show-more{
 
 .pricing-table tr:nth-child(even) {
   background-color: #F6F6F6;
+}
+
+
+.news-card{
+  border: 1px solid rgba(199,119,15,0.1);
+  border-radius: 5px;
+  padding: 1rem;  
+  margin: 3rem 0 4rem;
+  -webkit-box-shadow: 10px 20px 30px -15px rgba(199,119,15,0.5);
+  -moz-box-shadow: 10px 20px 30px -15px rgba(199,119,15,0.5);
+  box-shadow: 10px 20px 30px -15px rgba(199,119,15,0.5);
 }
