@@ -1,11 +1,12 @@
 ---
-titulek: Nové barvy od Platinum Nails Technology
-date: 2020-07-08T22:00:00.000+00:00
-text: "<p>Nedávno jsem objevila novinku od Platinum Nails Technology v podobě Gel
-  laku z řady BOOSTER, která je naprosto perfektní.</p>"
-obrazek: "/images/platinum-booster-nehtova-modelaz-plzen.jpg"
+titulek: Další barvy od Platinum Nails Technology
+date: 2020-07-20T22:00:00Z
+text: "<p>Jak už jsem zmínila v předchozím příspěvku, velmi jsem si oblíbila produkty
+  od značky <strong>Platinum Nails Technology</strong>. Nejen že mají perfektní <strong>stavební
+  gely</strong>, ale ty jejich <strong>Gel laky</strong> jsou prostě skvělé.</p>"
+obrazek: "/images/platinum-booster-nehtova-modelaz-plzen-1.jpg"
 gallery: []
 title: platinum-booster-letni-barvy.md
 
 ---
-Nedávno jsem objevila novinku od **Platinum Nails Technology** v podobě **Gel laku** z **řady** **BOOSTER**, která je naprosto perfektní. Byla jsem nadšená jak nádherně kryjí a snadno se nanáší, proto jsem se rozhodla jich pro Vás co nejvíce objednat. Tady si můžete prohlédnout další novou sadu, na kterou se u mě můžete těšit.
+Jak už jsem zmínila v předchozím příspěvku, velmi jsem si oblíbila produkty od značky **Platinum Nails Technology**. Nejen že mají perfektní **stavební gely**, ale ty jejich **Gel laky** jsou prostě skvělé. Stále přicházejí na trh s novými barvami. Proto jsem pro vás objednala další ochutnávku nádherných letních barviček.
