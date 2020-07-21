@@ -57,7 +57,7 @@
 <script>
 import PhoneIcon from "./icons/phoneIcon";
 import MailIcon from "./icons/mailIcon";
-import IgIcon from "./icons/IgIcon";
+import IgIcon from "./icons/igIcon";
 
 export default {
   props: ['about', 'mainContent'],
