@@ -46,12 +46,13 @@
       <Price :prices="prices" />
     </main>
 
+    <PageFooter :about="about.attributes" :mainContent="mainContent" />
     <!-- Start Footer -->
-    <footer class="ampstart-footer flex flex-column items-center px3 ">
+    <!-- <footer class="ampstart-footer flex flex-column items-center px3 ">
       <small>
         © Alena Krajícová
       </small>
-    </footer>
+    </footer> -->
     <!-- End Footer -->
   </div>
 </template>
@@ -65,6 +66,7 @@ import Section from "../components/Section";
 import About from "../components/About";
 import PostMin from "../components/PostMin";
 import Price from "../components/Price";
+import PageFooter from "../components/Footer";
 import { encodeID, replaceDiacritics } from "../plugins/utils";
 
 export default {
@@ -76,7 +78,8 @@ export default {
     Section,
     About,
     PostMin,
-    Price
+    Price,
+    PageFooter
   },
   data: function () {
     return {

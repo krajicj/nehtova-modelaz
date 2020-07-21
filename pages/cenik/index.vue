@@ -36,11 +36,7 @@
     </main>
 
     <!-- Start Footer -->
-    <footer class="ampstart-footer flex flex-column items-center px3 ">
-      <small>
-        © Alena Krajícová
-      </small>
-    </footer>
+    <PageFooter :about="about.attributes" :mainContent="mainContent" />
     <!-- End Footer -->
   </div>
 </template>
@@ -49,13 +45,15 @@
 import PageHeader from "../../components/Header";
 import Sidebar from "../../components/Sidebar";
 import About from "../../components/About";
+import PageFooter from "../../components/Footer";
 import { encodeID, replaceDiacritics } from "../../plugins/utils";
 
 export default {
   components: {
     PageHeader,
     Sidebar,
-    About
+    About,
+    PageFooter
   },
   data: function () {
     return {

@@ -2102,6 +2102,7 @@ a.button {
   .post-min{
     margin: 0 auto 2rem auto;
   }
+
   
 }
 
@@ -2129,6 +2130,20 @@ a.button {
   color: #fdd198;
 }
 
+.logo-footer h2{
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: Cinzel, sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 0.6;
+  text-align: right;  
+}
+.logo-footer small{
+  font-size: 0.5rem;
+  color: #fdd198;
+}
+
 .row-header{
   display: flex;
   align-items: center;
@@ -2141,6 +2156,13 @@ a.button {
     line-height: 0.8;
   }
   .logo small{
+   font-size:  0.5rem;
+  }
+  .logo-footer h2{    
+    font-size: 1rem;   
+    line-height: 0.8;
+  }
+  .logo-footer small{
    font-size:  0.5rem;
   }
 }
@@ -2175,6 +2197,7 @@ a.post-show-more{
   width: 1em;
   height: 1em;
   vertical-align: text-top;
+  fill: inherit;
 }
 
 .post-min{  
@@ -2297,7 +2320,90 @@ a.post-show-more{
   border-radius: 5px;
   padding: 1rem;  
   margin: 3rem 0 4rem;
-  -webkit-box-shadow: 10px 20px 30px -15px rgba(199,119,15,0.5);
-  -moz-box-shadow: 10px 20px 30px -15px rgba(199,119,15,0.5);
-  box-shadow: 10px 20px 30px -15px rgba(199,119,15,0.5);
+  -webkit-box-shadow: 10px 20px 30px -25px rgba(199,119,15,0.5);
+  -moz-box-shadow: 10px 20px 30px -25px rgba(199,119,15,0.5);
+  box-shadow: 10px 20px 30px -25px rgba(199,119,15,0.5);
+}
+
+
+.cookies-policy-banner{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(199,119,15,0.9);
+  color: #f6f6f6;
+}
+
+.cookies-policy-banner button{
+  color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  background-color: #C7770F;
+  border-radius: 5px;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+.cookies-policy-banner button:hover{
+  cursor: pointer;
+  background-color: rgba(185, 115, 22, 0.9);
+  
+}
+
+
+
+.cookie-text{
+  line-height: 1;
+}
+
+.page-footer{
+  margin-top: 3rem;
+  background-color: rgba(199,119,15,0.9);
+  color: #f6f6f6;  
+}
+
+.logo-footer{
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.footer-data{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 300px;
+  text-align: center;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.footer-panel{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 1rem;
+}
+
+.footer-contact{
+  fill: #F6F6F6;
+  color: #f6f6f6;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contact a:hover{
+  color: #000000;
+  fill: #000000;
+}
+
+@media screen and (max-width:768px){
+  .page-footer{
+    margin-top: 0;
+  }
 }

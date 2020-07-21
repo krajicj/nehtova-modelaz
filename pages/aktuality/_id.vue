@@ -57,17 +57,14 @@
     </main>
 
     <!-- Start Footer -->
-    <footer class="ampstart-footer flex flex-column items-center px3 ">
-      <small>
-        © Alena Krajícová
-      </small>
-    </footer>
+    <PageFooter :about="about.attributes" :mainContent="mainContent" />
     <!-- End Footer -->
   </div>
 </template>
 
 <script>
 import PageHeader from "../../components/Header";
+import PageFooter from "../../components/Footer";
 import Sidebar from "../../components/Sidebar";
 import Gallery from "../../components/Gallery";
 import About from "../../components/About";
@@ -80,7 +77,8 @@ export default {
     Sidebar,
     Gallery,
     About,
-    CalendarIcon
+    CalendarIcon,
+    PageFooter
   },
   data: function () {
     return {
