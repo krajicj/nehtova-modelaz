@@ -2039,12 +2039,14 @@ a.button {
 
 .post-min-section{
   display: flex;
-  /* justify-content: space-between;*/
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .post-min{
-  margin: 0 1.5rem;
+  margin: 0 1.5rem 3rem;
   max-width: 400px;
+  width: 300px;
 }
 
 @media screen and (max-width:768px){
