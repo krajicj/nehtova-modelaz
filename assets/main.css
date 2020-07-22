@@ -2063,6 +2063,7 @@ a.button {
 
   .button {
     width: 100%;
+    max-width: 400px;
   }
 
   .h1-mobile{
@@ -2103,6 +2104,7 @@ a.button {
 
   .post-min{
     margin: 0 auto 2rem auto;
+    width: 100%;
   }
 
   
