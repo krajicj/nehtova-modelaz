@@ -2044,9 +2044,14 @@ a.button {
 }
 
 .post-min{
-  margin: 0 1.5rem 3rem;
+  margin: 0 1rem 2rem;
   max-width: 400px;
-  width: 300px;
+  width: 325px;
+  border-radius: 10px;
+}
+
+.post-min img{
+  border-radius: 10px 10px 0 0;
 }
 
 @media screen and (max-width:768px){
@@ -2211,10 +2216,18 @@ a.post-show-more{
 
 .post-min-text{
   padding-top: 1rem;
+  
 }
+
 .post-min-text-wrapper{
   padding: 1.5rem;
+  font-size: 0.9rem;
   
+}
+
+.post-min-heading h3{
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .content-gallery{
@@ -2224,6 +2237,7 @@ a.post-show-more{
 
 .post-min-date{
   margin-top: 1rem;
+  
 }
 
 .post-min-section{
