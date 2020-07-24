@@ -13,14 +13,7 @@
         </div>
       </div>
       <div class="web-content">
-        <Post
-          v-for="(post, index) in posts"
-          :key="post.titulek"
-          :post="post"
-          :id="post.attributes.id"
-          :index="index"
-          :count="post.length"
-        />
+        <Post :posts="posts" />
 
         <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
       </div>

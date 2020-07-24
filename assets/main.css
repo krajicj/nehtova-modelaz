@@ -2054,6 +2054,8 @@ a.button {
   border-radius: 10px 10px 0 0;
 }
 
+
+
 @media screen and (max-width:768px){
   .web-section-type{
       display:flex;
@@ -2245,6 +2247,8 @@ a.post-show-more{
   margin-bottom: 3.5rem;
 }
 
+
+
 .news-strip {
   min-height: 130px;
 }
@@ -2420,8 +2424,42 @@ a.post-show-more{
   fill: #000000;
 }
 
+.masonry{
+  column-count: 3;
+  column-gap: 1.5rem;
+  margin: 3.5rem 0;
+}
+
+.masonry-item{
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+}
+
+.masonry-item img{
+  border-radius: 10px 10px 0 0;
+}
+
+
 @media screen and (max-width:768px){
   .page-footer{
     margin-top: 0;
   }
+  .masonry{
+    column-count: 2;
+  }
+}
+
+
+@media screen and (max-width:576px){
+  .masonry{
+    column-count: 1;
+  }
+
+}
+
+.bg-gray{
+  background-color: #F6F6F6;
 }
