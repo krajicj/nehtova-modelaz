@@ -9,10 +9,7 @@
           <div v-for="post in posts" :key="post.id" class="post-min">
             <article class="">
               <div class="img-wrapper">
-                <nuxt-link
-                  :to="{ path: `aktuality/${post.attributes.url}` }"
-                  append
-                >
+                <nuxt-link :to="{ path: `/aktuality/${post.attributes.url}` }">
                   <amp-img
                     class=""
                     :srcset="
@@ -28,8 +25,7 @@
               <div class="post-min-text-wrapper">
                 <div class="post-min-heading">
                   <nuxt-link
-                    :to="{ path: `aktuality/${post.attributes.url}` }"
-                    append
+                    :to="{ path: `/aktuality/${post.attributes.url}` }"
                   >
                     <h3>{{ post.attributes.titulek }}</h3>
                   </nuxt-link>

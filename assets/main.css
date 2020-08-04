@@ -2054,6 +2054,10 @@ a.button {
   border-radius: 10px 10px 0 0;
 }
 
+.box-text{
+  padding: 2rem;
+}
+
 
 
 @media screen and (max-width:768px){
@@ -2066,7 +2070,10 @@ a.button {
     margin: auto;
     padding-top: 1rem;
   }
-  .box-text{order:1;}
+  .box-text{
+    order:1;
+    padding: 1rem;
+  }
 
   .button {
     width: 100%;
@@ -2188,7 +2195,14 @@ a.button {
 }
 
 .date-blog{
-  margin: 0.5rem 0;
+  text-align: center;
+  width: 200px;
+  background: #c7770f;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  fill: white;
+  margin-bottom: 2rem;
 }
 
 a.post-show-more{
@@ -2196,7 +2210,7 @@ a.post-show-more{
 }
 
 .post-text{
-  padding: 3rem 0;
+  padding: 3rem 0 0;
 }
 .post-img{
   max-width: 600px;

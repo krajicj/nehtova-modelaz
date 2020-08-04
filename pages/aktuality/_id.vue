@@ -41,10 +41,6 @@
         </div>
       </div>
 
-      <div class="web-content">
-        <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
-      </div>
-
       <!-- Gallery -->
 
       <Gallery
@@ -52,6 +48,10 @@
         :title="mainContent.attributes.titulek"
         :heading="`Další foto`"
       />
+
+      <PostMin :posts="posts" />
+
+      <Price :prices="prices" />
 
       <About :about="about" />
     </main>
@@ -68,6 +68,8 @@ import PageFooter from "../../components/Footer";
 import Sidebar from "../../components/Sidebar";
 import Gallery from "../../components/Gallery";
 import About from "../../components/About";
+import PostMin from "../../components/PostMin";
+import Price from "../../components/Price";
 import { encodeID, replaceDiacritics } from "../../plugins/utils";
 import CalendarIcon from "../../components/icons/calendarIcon";
 
@@ -78,7 +80,9 @@ export default {
     Gallery,
     About,
     CalendarIcon,
-    PageFooter
+    PageFooter,
+    PostMin,
+    Price
   },
   data: function () {
     return {
@@ -86,8 +90,10 @@ export default {
       images: [],
       mainContent: {},
       post: {},
+      posts: [],
       about: {},
-      ogImage: ''
+      ogImage: '',
+      prices: []
     }
   },
   computed: {
@@ -143,8 +149,34 @@ export default {
       }
     });
 
+    const limit = 3;
+
+    const postsAll = await require.context("~/content/blog/", true, /\.md$/)
+    const postsBig = postsAll.keys().map((key) => {
+      postsAll(key).attributes.url = key.split('.').slice(0, -1).join('.').split('/').slice(1).join('/');
+      postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
+      return postsAll(key)
+    });
+    const postsBigSorted = postsBig.sort(function (a, b) {
+      var dateA = new Date(a.attributes.date), dateB = new Date(b.attributes.date);
+      return dateB - dateA;
+    });
+
+    const posts = [];
+    let i = 0;
+    postsBigSorted.forEach(element => {
+      if (element.attributes.id !== post.attributes.id && limit != i) {
+        posts.push(element);
+        i = i + 1;
+      }
+    });
+
+    const priceMarkup = require(`~/content/cenik.md`);
+    const prices = priceMarkup.attributes.sluzba;
+
     const ogImage = require(`~/assets${post.attributes.obrazek}`);
-    return { post, ogImage };
+
+    return { post, ogImage, posts, prices };
   }
 }
 
