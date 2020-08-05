@@ -5,7 +5,7 @@
         {{ about.attributes.titulek }}
       </h2>
       <div class="row">
-        <div class="col col-6 sm-col-12 ">
+        <div class="col col-6 sm-col-12">
           <h3>
             <span class="h3">{{ about.attributes.ulice_cp }}</span>
           </h3>
@@ -33,7 +33,7 @@
             <br />
           </p>
           <a
-            href="https://goo.gl/maps/YCeSLStiYoEnviuN8"
+            href="https://g.page/alena_krajicova?share"
             target="_blank"
             class="button"
           >
@@ -41,7 +41,7 @@
             <span>Mapa</span>
           </a>
         </div>
-        <div class="col col-6 sm-col-12 ">
+        <div class="col col-6 sm-col-12">
           <br />
           <div v-html="about.html" class=""></div>
         </div>
