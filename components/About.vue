@@ -32,11 +32,7 @@
 
             <br />
           </p>
-          <a
-            href="https://g.page/alena_krajicova?share"
-            target="_blank"
-            class="button"
-          >
+          <a :href="about.attributes.mapa" target="_blank" class="button">
             <PinIcon />
             <span>Mapa</span>
           </a>
