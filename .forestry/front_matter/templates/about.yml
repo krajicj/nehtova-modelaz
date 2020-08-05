@@ -46,5 +46,10 @@ fields:
   config:
     required: false
   label: instagram
+- name: mapa
+  type: text
+  config:
+    required: false
+  label: Mapa odkaz
 pages:
 - content/about.md
