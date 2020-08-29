@@ -4,7 +4,7 @@ date: 2020-08-28T22:00:00Z
 text: "<p>Nechte si vaše nehty ozdobit <strong>SWAROVSKI kamínky</strong> a podtrhněte
   tak finální vzhled nehtů, který <strong>zaujme na první pohled</strong>. Od Swarovski
   nemusíte nosit jen šperky, ale jednotlivé kamínky mohou <strong>zdobit i vaše ruce</strong>.</p>"
-obrazek: ''
+obrazek: "/images/zdobeni-swarovski-nehtova-modelaz.jpg"
 gallery: []
 
 ---
