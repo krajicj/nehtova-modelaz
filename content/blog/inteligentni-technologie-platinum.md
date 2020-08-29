@@ -1,6 +1,6 @@
 ---
 titulek: Nová inteligentní technologie od Platinum
-date: 2020-08-29T22:00:00Z
+date: 2020-08-28T22:00:00Z
 text: "<p>Toužíte po <strong>krásných a delších nehtech</strong> a nechcete umělé?
   Pak je právě pro vás vhodná nová inteligentní technologie <strong>PLATINUM BOOSTER
   SOFT GEL</strong>, kterou vám nově mohu nabídnout i u mě v salonu.</p>"
