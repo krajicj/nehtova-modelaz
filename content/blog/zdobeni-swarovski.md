@@ -8,4 +8,4 @@ obrazek: "/images/zdobeni-swarovski-nehtova-modelaz.jpg"
 gallery: []
 
 ---
-**Nechte vaše nehty být klenotem** a rovnou tím od SWAROVSKI. Ozdobte si vaše nehty **SWAROVSKI kamínky** a podtrhněte tak finální vzhled nehtů, který **zaujme na první pohled**. Od Swarovski nemusíte nosit jen šperky, ale jednotlivé kamínky mohou **zdobit i vaše ruce**.
+**Nechte vaše nehty být klenotem** a rovnou tím od SWAROVSKI. Ozdobte si vaše nehty **SWAROVSKI kamínky** a podtrhněte tak finální vzhled nehtů, který **zaujme na první pohled**. Od Swarovski nemusíte nosit jen šperky, ale kamínky mohou **zdobit i vaše ruce**.
