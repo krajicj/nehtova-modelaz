@@ -6,6 +6,10 @@ sluzba:
 - nazev: Doplnění modeláže
   popis: Doplnění odrostlých gelových nehtů vytvořených u mě.
   cena: 530
+- nazev: Platinum BOOSTER SOFT GEL
+  popis: Zpevnění a lehké prodloužení přírodních nehtů bez použití stavebního UV gelu.
+    V ceně je zahrnuta i možnost potažení prodloužených nehtů barvou.
+  cena: 490
 - nazev: Nová modeláž nehtů bez prodloužení
   popis: Potažení přírodního nehtu zpevňujícím materiálem.
   cena: 450
