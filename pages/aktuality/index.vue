@@ -7,9 +7,7 @@
     <main id="content" role="main">
       <div class="web-section-top">
         <div class="web-content">
-          <h1 class="section-heading">
-            Aktuality
-          </h1>
+          <h1 class="section-heading">Aktuality</h1>
         </div>
       </div>
       <div class="web-content">
