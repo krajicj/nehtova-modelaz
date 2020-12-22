@@ -1,5 +1,6 @@
 ---
 gallery:
+- "/images/platinum-booster-matny-nehtova-modelaz-plzen.jpg"
 - "/images/platinum-nails-technology-nehtova-modelaz-plzen.jpg"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen3.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen4.jpg"
