@@ -14,6 +14,12 @@
         <Post :posts="posts" />
 
         <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
+        <nuxt-link
+          v-if="hasNextPage"
+          to="/aktuality/strana/2"
+          class="button btn-center"
+          >Zobrazit starší příspěvky</nuxt-link
+        >
       </div>
       <About :about="about" />
 
@@ -33,6 +39,7 @@ import Post from "../../components/Post";
 import About from "../../components/About";
 import PageFooter from "../../components/Footer";
 import { encodeID, replaceDiacritics } from "../../plugins/utils";
+import { ITEM_PER_PAGE } from "../../plugins/constants";
 
 export default {
   components: {
@@ -47,7 +54,8 @@ export default {
       mainContent: {},
       posts: [],
       about: {},
-      ogImage: ''
+      ogImage: '',
+      hasNextPage: false
     }
   },
   head () {
@@ -89,9 +97,15 @@ export default {
     }).sort(function (a, b) {
       var dateA = new Date(a.attributes.date), dateB = new Date(b.attributes.date);
       return dateB - dateA;
-    });
+    }).slice(0, ITEM_PER_PAGE);
 
-    return { posts };
+    let hasNextPage = false;
+    if (postsAll.keys().length > ITEM_PER_PAGE) {
+      hasNextPage = true;
+    }
+
+
+    return { posts, hasNextPage };
   }
 }
 
