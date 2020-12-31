@@ -15,7 +15,7 @@ sluzba:
   cena: 550
 - nazev: Nová modeláž nehtů pro studenty
   popis: Sleva platí po předložení platné studentské průkazky.
-  cena: 370
+  cena: 450
 - nazev: Doplnění modeláže nehtů pro studenty
   popis: ''
   cena: 320
