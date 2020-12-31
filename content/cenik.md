@@ -18,7 +18,7 @@ sluzba:
   cena: 450
 - nazev: Doplnění modeláže nehtů pro studenty
   popis: ''
-  cena: 320
+  cena: 400
 - nazev: Gel lak/Shellac
   popis: Aplikace barvy na přírodní nehty.
   cena: 270
