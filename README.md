@@ -20,3 +20,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+## TODOS
+
+- in component price load prices from cms
+- aktuality pagination
