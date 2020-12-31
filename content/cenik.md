@@ -10,9 +10,9 @@ sluzba:
   popis: Zpevnění a lehké prodloužení přírodních nehtů bez použití stavebního UV gelu.
     V ceně je zahrnuta i možnost potažení prodloužených nehtů barvou.
   cena: 490
-- nazev: Nová modeláž nehtů bez prodloužení
+- nazev: Modeláž nehtů bez prodloužení
   popis: Potažení přírodního nehtu zpevňujícím materiálem.
-  cena: 450
+  cena: 550
 - nazev: Doplnění modeláže bez prodloužení
   popis: ''
   cena: 420
