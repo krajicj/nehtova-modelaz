@@ -13,9 +13,6 @@ sluzba:
 - nazev: Modeláž nehtů bez prodloužení
   popis: Potažení přírodního nehtu zpevňujícím materiálem.
   cena: 550
-- nazev: Doplnění modeláže bez prodloužení
-  popis: ''
-  cena: 420
 - nazev: Nová modeláž nehtů pro studenty
   popis: Sleva platí po předložení platné studentské průkazky.
   cena: 370
