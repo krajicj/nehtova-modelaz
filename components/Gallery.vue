@@ -18,7 +18,8 @@
           :alt="title"
           on="tap:lightbox"
           role="button"
-          tabindex="0"          
+          tabindex="0"
+          class="img-cover"          
         ></amp-img>                  
     </amp-carousel>
   </div>
