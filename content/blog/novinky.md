@@ -1,14 +1,11 @@
 ---
-titulek: Milé dámy, od čtvrtka 3.12. konečně otevírám
-date: 2020-11-30T23:00:00.000+00:00
-text: "<p>Milé dámy, <strong>od čtvrtka 3.12</strong>. konečně <strong>otevírám svůj
-  salón</strong>, takže pokud ještě nemáte termín, tak se rozhodně <strong>neváhejte
-  telefonicky objednat</strong>, protože do Vánoc už nám moc dní nezbývá. Samozřejmě
-  návštěva musí být v souladu s nadále trvajícími hygienickými opatřeními. Už se na
-  Vás moc těším.</p>"
+titulek: 'Novinky vyzkoušené během lockdownu '
+date: 2021-05-12T22:00:00Z
+text: "<p>Během dlouhé uzávěry jsem nelenila a zkoušela nové typy zdobení, gelů a
+  barev, abych Vás mohla hned po otevření překvapit spoustou novinek. </p>"
 obrazek: "/images/vanocni-barvy-nehtova-modelaz-plzen.jpg"
 gallery: []
 title: novinky
 
 ---
-Milé dámy, **od čtvrtka 3.12.** konečně **otevírám svůj salón**, takže pokud ještě nemáte termín, tak se rozhodně **neváhejte telefonicky objednat**, protože do Vánoc už nám moc dní nezbývá. Samozřejmě návštěva musí být v souladu s nadále trvajícími hygienickými opatřeními. Už se na Vás moc těším.
+Během dlouhé uzávěry jsem nelenila a zkoušela nové typy zdobení, gelů a barev, abych Vás mohla hned po otevření překvapit spoustou novinek. Některé z těchto novinek si můžete prohlédnout níže v galerii.
