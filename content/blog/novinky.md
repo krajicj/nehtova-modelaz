@@ -1,6 +1,6 @@
 ---
 titulek: 'Novinky vyzkoušené během lockdownu '
-date: 2021-05-12T22:00:00Z
+date: 2021-05-12T22:00:00.000+00:00
 text: "<p>Během dlouhé uzávěry jsem nelenila a zkoušela <strong>nové typy zdobení,
   gelů a barev</strong>, abych Vás mohla hned po otevření <strong>překvapit spoustou
   novinek</strong>.</p>"
@@ -17,4 +17,4 @@ gallery:
 title: novinky
 
 ---
-Během dlouhé uzávěry jsem nelenila a zkoušela **nové typy zdobení, gelů a barev**, abych Vás mohla hned po otevření překvapit spoustou novinek. Neváhejte a přijďte se přesvědčit na vlastní oči ke mně do salonu. Moc ráda Vám vaše **nehtíky ozdobím spoustou nových barev a zdobení**. Některé z těchto novinek si můžete **prohlédnout níže v galerii**.
+Během dlouhé uzávěry jsem nelenila a zkoušela **nové typy zdobení, gelů a barev**, abych Vás mohla hned po otevření překvapit spoustou novinek. Neváhejte a přijďte se přesvědčit na vlastní oči ke mně do salonu. Moc ráda Vám **nehtíky ozdobím spoustou nových barev a zdobení**. Některé z těchto novinek si můžete **prohlédnout níže v galerii**.
