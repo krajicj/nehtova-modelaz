@@ -1,11 +1,15 @@
 ---
 gallery:
 - "/images/platinum-booster-matny-nehtova-modelaz-plzen.jpg"
+- "/images/zdobeni-stetcem-nehty-plzen.jpeg"
 - "/images/platinum-nails-technology-nehtova-modelaz-plzen.jpg"
-- "/images/shellac-gel-lak-nehtova-modelaz-plzen3.jpg"
-- "/images/uv-gel-nehtova-modelaz-plzen4.jpg"
-- "/images/uv-gel-nehtova-modelaz-plzen12.jpg"
+- "/images/spider-gel-kaminky-nehty-plzen.jpeg"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen2.jpg"
+- "/images/b26182b4-ef9d-49c3-bd42-0f124dce1dd8.jpeg"
+- "/images/uv-gel-nehtova-modelaz-plzen4.jpg"
+- "/images/spider-gel-nehtova-modelaz-plzen.jpeg"
+- "/images/shellac-gel-lak-nehtova-modelaz-plzen3.jpg"
+- "/images/uv-gel-nehtova-modelaz-plzen12.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen13.jpg"
 - "/images/shellac-gel-lak-nehtova-modelaz-plzen4.jpg"
 - "/images/uv-gel-nehtova-modelaz-plzen11.jpg"
