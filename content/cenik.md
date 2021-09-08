@@ -2,36 +2,33 @@
 sluzba:
 - nazev: Nová modeláž nehtů
   popis: 'Prodloužení přírodního nehtu zpevňujícím materiálem. '
-  cena: 670
+  cena: 700
 - nazev: Doplnění modeláže
   popis: Doplnění odrostlých gelových nehtů vytvořených u mě.
-  cena: 530
+  cena: 550
 - nazev: Platinum BOOSTER SOFT GEL
   popis: Zpevnění a lehké prodloužení přírodních nehtů bez použití stavebního UV gelu.
     V ceně je zahrnuta i možnost potažení prodloužených nehtů barvou.
   cena: 490
-- nazev: Nová modeláž nehtů bez prodloužení
+- nazev: Modeláž nehtů bez prodloužení
   popis: Potažení přírodního nehtu zpevňujícím materiálem.
-  cena: 450
-- nazev: Doplnění modeláže bez prodloužení
-  popis: ''
-  cena: 420
+  cena: 550
 - nazev: Nová modeláž nehtů pro studenty
   popis: Sleva platí po předložení platné studentské průkazky.
-  cena: 370
+  cena: 450
 - nazev: Doplnění modeláže nehtů pro studenty
   popis: ''
-  cena: 320
+  cena: 400
 - nazev: Gel lak/Shellac
   popis: Aplikace barvy na přírodní nehty.
-  cena: 270
+  cena: 370
 - nazev: Úprava nehtů na nohách + Gel lak/Shellac
   popis: Upravení přírodních nehtů na nohách, odstranění odumřelé kůže a zkrášlení
     nehtů pomocí Gel laku/Shellacu.
-  cena: 220
+  cena: 320
 - nazev: Přebroušení modeláže + nová barva
   popis: Přebroušení odrostlých nehtů (cca 14 dní) s novou barvou.
-  cena: 270
+  cena: 370
 - nazev: Nový nehet při doplnění
   popis: ''
   cena: 30
