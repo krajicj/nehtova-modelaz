@@ -13,13 +13,15 @@
       <div class="web-content">
         <Post :posts="posts" />
 
-        <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
         <nuxt-link
           v-if="hasNextPage"
           to="/aktuality/strana/2"
           class="button btn-center"
           >Zobrazit starší příspěvky</nuxt-link
         >
+
+        <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
+
       </div>
       <About :about="about" />
 

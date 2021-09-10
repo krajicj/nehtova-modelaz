@@ -62,7 +62,12 @@
           </div>
         </div> -->
 
-        <a href="/aktuality" class="button btn-center">Všechny aktuality</a>
+        <!-- <a href="/aktuality" class="button btn-center">Všechny aktuality</a> -->
+         <nuxt-link         
+          to="/aktuality/strana/1"
+          class="button btn-center"
+          >Všechny aktuality</nuxt-link
+        >
       </div>
     </div>
   </div>

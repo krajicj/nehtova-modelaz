@@ -12,7 +12,9 @@
       <div class="web-content">
         <Post :posts="posts" />
 
+        <Paginator :page="page" :pagesNum="pagesNum" />
         <nuxt-link to="/" class="button btn-center">Hlavní stránka</nuxt-link>
+        
       </div>
       <About :about="about" />
 
@@ -30,6 +32,8 @@ import Post from "../../../components/Post";
 import About from "../../../components/About";
 import PageFooter from "../../../components/Footer";
 import { encodeID, replaceDiacritics } from "../../../plugins/utils";
+import { ITEM_PER_PAGE } from '../../../plugins/constants';
+import Paginator from '../../../components/Paginator.vue';
 
 export default {
   components: {
@@ -37,15 +41,16 @@ export default {
     Sidebar,
     Post,
     About,
-    PageFooter
+    PageFooter,
+    Paginator
   },
   data: function () {
     return {
       mainContent: {},
-      posts: [],
       about: {},
       ogImage: '',
       page: '1'
+      
     }
   },
   head () {
@@ -80,22 +85,26 @@ export default {
   },
   async asyncData ({ params }) {
     const page = params.id;
-    const itemPerPage = 6;
+    const itemPerPage = ITEM_PER_PAGE;
     const offsetEnd = page * itemPerPage;
     const offsetStart = offsetEnd - itemPerPage;
 
-    const postsAll = await require.context("~/content/blog/", true, /\.md$/)
-    const posts = postsAll.keys().map((key) => {
+    const postsAll = await require.context("~/content/blog/", true, /\.md$/)    
+
+    let posts = postsAll.keys().map((key) => {
       postsAll(key).attributes.url = key.split('.').slice(0, -1).join('.').split('/').slice(1).join('/');
       postsAll(key).attributes.id = encodeID(replaceDiacritics((postsAll(key).attributes.titulek).toLowerCase()));
       return postsAll(key)
     }).sort(function (a, b) {
       var dateA = new Date(a.attributes.date), dateB = new Date(b.attributes.date);
       return dateB - dateA;
-    }).slice(offsetStart, offsetEnd);
+    });
 
+    const pagesNum = Math.ceil(posts.length / itemPerPage);
 
-    return { posts };
+    posts = posts.slice(offsetStart, offsetEnd);
+
+    return { posts, pagesNum, page };
   }
 }
 </script>
