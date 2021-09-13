@@ -3,7 +3,7 @@
     <div v-for="post in posts" :key="post.id" class="masonry-item">
       <article class="">
         <div class="img-wrapper">
-          <nuxt-link :to="{ path: `${post.attributes.url}` }" append>
+          <nuxt-link :to="{ path: `/aktuality/${post.attributes.url}` }" append>
             <amp-img
               class=""
               :srcset="require(`~/assets${post.attributes.obrazek}`).srcSet"
@@ -16,7 +16,7 @@
         </div>
         <div class="post-min-text-wrapper">
           <div class="post-min-heading">
-            <nuxt-link :to="{ path: `${post.attributes.url}` }" append>
+            <nuxt-link :to="{ path: `/aktuality/${post.attributes.url}` }" append>
               <h3>{{ post.attributes.titulek }}</h3>
             </nuxt-link>
           </div>
