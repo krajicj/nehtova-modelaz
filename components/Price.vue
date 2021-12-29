@@ -10,7 +10,7 @@
         </div>
         <div class="price-card">
           <div class="price-card-header"><h3>Gel lak / Shellac</h3></div>
-          <div class="price-card-footer">370 Kč</div>
+          <div class="price-card-footer">400 Kč</div>
         </div>
         <div class="price-card">
           <div class="price-card-header"><h3>Manikúra</h3></div>
