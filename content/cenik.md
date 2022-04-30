@@ -2,7 +2,7 @@
 sluzba:
 - nazev: Nová modeláž nehtů
   popis: 'Prodloužení přírodního nehtu zpevňujícím materiálem. '
-  cena: 700
+  cena: 750
 - nazev: Doplnění modeláže
   popis: Doplnění odrostlých gelových nehtů vytvořených u mě.
   cena: 550
