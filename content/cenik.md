@@ -26,15 +26,12 @@ sluzba:
   popis: Upravení přírodních nehtů na nohách, odstranění odumřelé kůže a zkrášlení
     nehtů pomocí Gel laku/Shellacu.
   cena: 400
-- nazev: Přebroušení modeláže + nová barva
-  popis: Přebroušení odrostlých nehtů (cca 14 dní) s novou barvou.
-  cena: 400
 - nazev: Nový nehet při doplnění
   popis: ''
   cena: 30
 - nazev: Nový nehet mimo doplnění
   popis: ''
-  cena: 70
+  cena: 75
 - nazev: Zdobení
   popis: Kamínky Swarovski, razítka, vodolepky, leštící pigment. Cena se odvíjí podle
     náročnosti zdobení.
