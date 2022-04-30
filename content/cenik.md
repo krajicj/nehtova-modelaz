@@ -52,6 +52,6 @@ sluzba:
   cena: 300
 - nazev: Kompletní kúra pro ruce
   popis: Kombinace masáže rukou a parafínového zábalu.
-  cena: 400
+  cena: 500
 
 ---
