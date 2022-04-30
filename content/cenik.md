@@ -38,10 +38,10 @@ sluzba:
   cena: 5
 - nazev: Odstranění gelové modeláže + výživa
   popis: ''
-  cena: 300
+  cena: 350
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
-  cena: 250
+  cena: 350
 - nazev: Parafínový zábal
   popis: Parafínový zábal na ruce je blahodárná procedura, která zlepšuje prokrvení,
     vypíná a zjemňuje pokožku a také vyživí a zpevní vaše nehty.
