@@ -15,10 +15,10 @@ sluzba:
   cena: 580
 - nazev: Nová modeláž nehtů pro studenty
   popis: Sleva platí po předložení platné studentské průkazky.
-  cena: 450
+  cena: 550
 - nazev: Doplnění modeláže nehtů pro studenty
   popis: ''
-  cena: 400
+  cena: 500
 - nazev: Gel lak/Shellac
   popis: Aplikace barvy na přírodní nehty.
   cena: 400
