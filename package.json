@@ -20,5 +20,8 @@
     "frontmatter-markdown-loader": "^3.6.0",
     "responsive-loader": "^1.2.0",
     "sharp": "^0.25.4"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
