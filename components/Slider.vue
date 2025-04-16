@@ -4,9 +4,7 @@
     <figure class="ampstart-image-fullpage-hero m0 relative mb4">
       <amp-img
         height="100vh"
-        :alt="
-          `${mainContent.nadpis} - ${mainContent.nadpis2} - ${mainContent.nadpis3}`
-        "
+        :alt="`${mainContent.nadpis} - ${mainContent.nadpis2} - ${mainContent.nadpis3}`"
         layout="fixed-height"
         :srcset="require(`~/assets${mainContent.main_image}`).srcSet"
       ></amp-img>

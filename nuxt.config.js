@@ -13,15 +13,36 @@ async function getDynamicPaths (urlFilepathTable) {
 }
 
 const modifyHtml = (html) => {
-  // Add amp-custom tag to added CSS
-  html = html.replace(/<style data-vue-ssr/g, '<style amp-custom data-vue-ssr')
+  // First, collect all style content except amp-boilerplate
+  const styleMatches = html.match(/<style(?!.*amp-boilerplate)[^>]*>([\s\S]*?)<\/style>/g) || [];
+  const styleContent = styleMatches.map(match => {
+    return match.replace(/<style[^>]*>([\s\S]*?)<\/style>/, '$1');
+  }).join('\n');
+
+  // Remove all style tags except amp-boilerplate
+  html = html.replace(/<style(?!.*amp-boilerplate)[^>]*>[\s\S]*?<\/style>/g, '');
+
+  // Add single amp-custom style tag
+  const ampCustomStyle = `<style amp-custom>${styleContent}</style>`;
+  
   // Remove every script tag from generated HTML
-  html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+  html = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+  
   // Add AMP script before </head>
-  const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script><script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script><script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>'
-  // <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script> // cookie
-  html = html.replace('</head>', ampScript + '</head>')
-  return html
+  const ampScript = `
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  `;
+  
+  // Insert both amp-custom style and amp scripts before </head>
+  html = html.replace('</head>', ampCustomStyle + ampScript + '</head>');
+  
+  return html;
 }
 
 export default async () => {
