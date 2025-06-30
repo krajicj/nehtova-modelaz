@@ -19,7 +19,7 @@ sluzba:
 - nazev: Úprava nehtů na nohách + Gel lak/Shellac
   popis: Upravení přírodních nehtů na nohách, odstranění odumřelé kůže a zkrášlení
     nehtů pomocí Gel laku/Shellacu.
-  cena: 530
+  cena: 550
 - nazev: Nový nehet při doplnění
   popis: ''
   cena: 30
