@@ -2,53 +2,53 @@
 sluzba:
 - nazev: Nová modeláž nehtů
   popis: 'Prodloužení přírodního nehtu zpevňujícím materiálem. '
-  cena: 800
+  cena: 850
   homepage: true
 - nazev: Doplnění modeláže
   popis: Doplnění odrostlých gelových nehtů vytvořených u mě.
-  cena: 660
+  cena: 710
   homepage: true
 - nazev: Platinum BOOSTER SOFT GEL
   popis: Zpevnění a lehké prodloužení přírodních nehtů bez použití stavebního UV gelu.
     V ceně je zahrnuta i možnost potažení prodloužených nehtů barvou.
-  cena: 630
+  cena: 680
 - nazev: Modeláž nehtů bez prodloužení
   popis: Potažení přírodního nehtu zpevňujícím materiálem.
-  cena: 660
+  cena: 710
 - nazev: Gel lak / Shellac
   popis: Aplikace barvy na přírodní nehty.
-  cena: 630
+  cena: 680
   homepage: true
 - nazev: Úprava nehtů na nohách + Gel lak / Shellac
   popis: Upravení přírodních nehtů na nohách, odstranění odumřelé kůže a zkrášlení
     nehtů pomocí Gel laku / Shellacu.
-  cena: 530
+  cena: 550
 - nazev: Nový nehet při doplnění
   popis: ''
   cena: 30
 - nazev: Nový nehet mimo doplnění
   popis: ''
-  cena: 80
+  cena: 85
 - nazev: Zdobení
   popis: Kamínky Swarovski, razítka, vodolepky, leštící pigment. Cena se odvíjí podle
     náročnosti zdobení.
   cena: 10
 - nazev: Odstranění gelové modeláže + výživa
   popis: ''
-  cena: 380
+  cena: 410
 - nazev: Manikúra
   popis: Čištění nehtů, jejich zarovnání a odstranění odumřelé kůže z jejich okolí.
-  cena: 380
+  cena: 410
 - nazev: Parafínový zábal
   popis: Parafínový zábal na ruce je blahodárná procedura, která zlepšuje prokrvení,
     vypíná a zjemňuje pokožku a také vyživí a zpevní vaše nehty.
-  cena: 380
+  cena: 410
 - nazev: Masáž rukou
   popis: 'Masáž rukou přináší úlevu po celodenní námaze a také slouží jako prevence
     syndromu karpálních tunelů. '
-  cena: 350
+  cena: 410
 - nazev: Kompletní kúra pro ruce
   popis: Kombinace masáže rukou a parafínového zábalu.
-  cena: 610
+  cena: 660
 
 ---
