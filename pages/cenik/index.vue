@@ -25,6 +25,9 @@
               <td class="right-align">{{ price.cena }}&nbsp;Kč</td>
             </tr>
           </table>
+          <div class="price-validity-wrapper flex justify-end mt-2">
+            <small>Platnost ceníku od 1.7.2025</small>
+          </div>
         </div>
       </div>
       <div class="web-content">
